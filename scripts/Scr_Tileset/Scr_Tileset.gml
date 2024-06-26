@@ -1,3 +1,14 @@
+function PushOrPullBlock(tileset, xPos, yPos, xAdd, yAdd, blockA, blockB){
+	SetTileIndex(tileset, xPos, yPos, blockA)
+	SetTileIndex(tileset, xPos+xAdd, yPos+yAdd, blockB)
+	
+	//SetTileIndex(tileset, x+32*(1*xDir), y+32*(1*yDir), 0)
+	//SetTileIndex(tileset, x+64*(1*xDir), y+64*(1*yDir), 1)
+	
+	//SetTileIndex(tileset, x, y, 0)
+	//SetTileIndex(tileset, x+32*(-directions[0]), y+32*(-directions[1]), 1)	
+}
+
 function GetTileIndex(tileset, xPos, yPos){
 	var lay_id = layer_get_id(tileset);
 	var map_id = layer_tilemap_get_id(lay_id);
