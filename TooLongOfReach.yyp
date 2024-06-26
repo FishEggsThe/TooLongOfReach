@@ -34,6 +34,8 @@
   },
   "name":"TooLongOfReach",
   "resources":[
+    {"id":{"name":"Obj_BoxingGlove","path":"objects/Obj_BoxingGlove/Obj_BoxingGlove.yy",},},
+    {"id":{"name":"Obj_Camers","path":"objects/Obj_Camers/Obj_Camers.yy",},},
     {"id":{"name":"Obj_Control","path":"objects/Obj_Control/Obj_Control.yy",},},
     {"id":{"name":"Obj_GrappleHook","path":"objects/Obj_GrappleHook/Obj_GrappleHook.yy",},},
     {"id":{"name":"Obj_GrassTiles","path":"objects/Obj_GrassTiles/Obj_GrassTiles.yy",},},

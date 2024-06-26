@@ -37,7 +37,7 @@
   "tileAnimationFrames":[
     {"$GMTileAnimation":"","%Name":"Anim_DummyHit","frames":[4,5,6,3,],"name":"Anim_DummyHit","resourceType":"GMTileAnimation","resourceVersion":"2.0",},
   ],
-  "tileAnimationSpeed":15.0,
+  "tileAnimationSpeed":10.0,
   "tileHeight":32,
   "tilehsep":0,
   "tilevsep":0,

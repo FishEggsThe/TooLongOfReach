@@ -3,28 +3,33 @@ function MovePlayer(left, right, down, up){
 		var xDirection = keyboard_check_pressed(right)-keyboard_check_pressed(left)
 		var yDirection = keyboard_check_pressed(down)-keyboard_check_pressed(up)
 		
-		var newX = x+32*xDirection
-		var newY = y+32*yDirection
-		var tileInWay = GetTileIndex("Tiles", newX, newY)
-		if (tileInWay != 9 && tileInWay != 13) {
-			if tileInWay == 1 {
-				SetTileIndex("Tiles", x+32*(1*xDirection), y+32*(1*yDirection), 0)
-				SetTileIndex("Tiles", x+64*(1*xDirection), y+64*(1*yDirection), 1)
-
-			} else {
-				if xDirection != 0 {
-					x = newX
-					SetLastDirection(xDirection, 0)
-				} else if yDirection != 0 {
-					y = newY
-					SetLastDirection(0, yDirection)
-				}
-			}
-		}
+		TileCollision(xDirection, yDirection)
 		
 		
 		CheckIfTogether()
 	}
+}
+
+function TileCollision(xDir, yDir){
+	var addX = 32*xDir
+	var addY = 32*yDir
+	var newX = x+addX
+	var newY = y+addY
+	var tileInWay = GetTileIndex("Tiles", newX, newY)
+		if (tileInWay != 9 && tileInWay != 13 && tileInWay != (11-playerIndex)) {
+			if tileInWay == 1 {
+				SetTileIndex("Tiles", x+32*(1*xDir), y+32*(1*yDir), 0)
+				SetTileIndex("Tiles", x+64*(1*xDir), y+64*(1*yDir), 1)
+			} else {
+				if xDir != 0 {
+					x = newX
+					SetLastDirection(xDir, 0)
+				} else if yDir != 0 {
+					y = newY
+					SetLastDirection(0, yDir)
+				}
+			}
+		}
 }
 
 function SetLastDirection(xDir, yDir){
