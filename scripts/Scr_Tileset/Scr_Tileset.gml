@@ -4,7 +4,7 @@ function GetTileIndex(tileset, xPos, yPos){
 	var px = tilemap_get_cell_x_at_pixel(map_id, xPos, yPos);
 	var py = tilemap_get_cell_y_at_pixel(map_id, xPos, yPos);
 	var data = tilemap_get(map_id, px, py);
-	show_debug_message(data)
+	//show_debug_message(data)
 	
 	return data
 }

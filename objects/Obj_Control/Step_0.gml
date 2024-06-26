@@ -3,5 +3,5 @@ if mouse_check_button_pressed(mb_left) {
 }
 
 if global.together {
-	show_debug_message(":3")
+	//show_debug_message(":3")
 }
