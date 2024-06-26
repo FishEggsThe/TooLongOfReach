@@ -1,18 +1,20 @@
 {
   "$GMObject":"",
-  "%Name":"Obj_Player",
+  "%Name":"Obj_Player2",
   "eventList":[
     {"$GMEvent":"","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-    {"$GMEvent":"","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"Obj_Player",
+  "name":"Obj_Player2",
   "overriddenProperties":[],
   "parent":{
     "name":"Objects",
     "path":"folders/Objects.yy",
   },
-  "parentObjectId":null,
+  "parentObjectId":{
+    "name":"Obj_Player",
+    "path":"objects/Obj_Player/Obj_Player.yy",
+  },
   "persistent":false,
   "physicsAngularDamping":0.1,
   "physicsDensity":0.5,
@@ -31,8 +33,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"Spr_Player",
-    "path":"sprites/Spr_Player/Spr_Player.yy",
+    "name":"Spr_Player2",
+    "path":"sprites/Spr_Player2/Spr_Player2.yy",
   },
   "spriteMaskId":null,
   "visible":true,

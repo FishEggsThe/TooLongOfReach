@@ -1,14 +1,14 @@
 {
   "$GMTileSet":"",
-  "%Name":"TileSet1",
+  "%Name":"Ts_Grass",
   "autoTileSets":[],
   "macroPageTiles":{
     "SerialiseHeight":0,
     "SerialiseWidth":0,
     "TileSerialiseData":[],
   },
-  "name":"TileSet1",
-  "out_columns":3,
+  "name":"Ts_Grass",
+  "out_columns":2,
   "out_tilehborder":2,
   "out_tilevborder":2,
   "parent":{
@@ -18,8 +18,8 @@
   "resourceType":"GMTileSet",
   "resourceVersion":"2.0",
   "spriteId":{
-    "name":"Spr_MainTiles",
-    "path":"sprites/Spr_MainTiles/Spr_MainTiles.yy",
+    "name":"Spr_Grass",
+    "path":"sprites/Spr_Grass/Spr_Grass.yy",
   },
   "spriteNoExport":false,
   "textureGroupId":{
@@ -27,15 +27,10 @@
     "path":"texturegroups/Default",
   },
   "tileAnimation":{
-    "FrameData":[
-      0,0,0,0,1,1,1,1,2,2,2,2,3,4,5,6,4,5,6,3,5,6,3,4,6,3,4,5,7,7,7,7,8,8,8,8,9,9,9,9,10,10,10,10,11,11,11,
-      11,
-    ],
-    "SerialiseFrameCount":4,
+    "FrameData":[0,1,2,3,4,5,],
+    "SerialiseFrameCount":1,
   },
-  "tileAnimationFrames":[
-    {"$GMTileAnimation":"","%Name":"Anim_DummyHit","frames":[4,5,6,3,],"name":"Anim_DummyHit","resourceType":"GMTileAnimation","resourceVersion":"2.0",},
-  ],
+  "tileAnimationFrames":[],
   "tileAnimationSpeed":15.0,
   "tileHeight":32,
   "tilehsep":0,
@@ -43,5 +38,5 @@
   "tileWidth":32,
   "tilexoff":0,
   "tileyoff":0,
-  "tile_count":12,
+  "tile_count":6,
 }

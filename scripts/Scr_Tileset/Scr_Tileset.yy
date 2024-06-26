@@ -1,0 +1,13 @@
+{
+  "$GMScript":"",
+  "%Name":"Scr_Tileset",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"Scr_Tileset",
+  "parent":{
+    "name":"Scripts",
+    "path":"folders/Scripts.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}
