@@ -5,7 +5,6 @@ function MovePlayer(left, right, down, up){
 		
 		TileCollision(xDirection, yDirection)
 		
-		
 		CheckIfTogether()
 	}
 }
@@ -36,7 +35,7 @@ function TileCollision(xDir, yDir){
 
 function SetLastDirection(xDir, yDir){
 	lastDirection = [xDir, yDir]
-	show_debug_message(string(playerIndex) + ": " + string(lastDirection))
+	//show_debug_message(string(playerIndex) + ": " + string(lastDirection))
 }
 
 function UseAbility(input) {
@@ -56,7 +55,7 @@ function UseGrapplingHook(player) {
 			y = creator.y;
 			directions = player.lastDirection
 			direction = point_direction(0, 0, directions[0], directions[1])
-			show_debug_message(string(directions) + " " + string(direction))
+			//show_debug_message(string(directions) + " " + string(direction))
 		}
 	canMove = false
 }

@@ -1,12 +1,24 @@
 function PushOrPullBlock(tileset, xPos, yPos, xAdd, yAdd, blockA, blockB){
-	SetTileIndex(tileset, xPos, yPos, blockA)
-	SetTileIndex(tileset, xPos+xAdd, yPos+yAdd, blockB)
+	var pos = GetTileIndex(tileset, xPos+xAdd, yPos+yAdd)
+	var p0x = instance_id_get(0).x
+	var p0y = instance_id_get(0).y
+	var p1x = instance_id_get(1).x
+	var p1y = instance_id_get(1).y
+	var checkPlayerPositions = ((p0x !=xPos+xAdd && p0y !=yPos+yAdd) && 
+								(p1x !=xPos+xAdd && p1y !=yPos+yAdd))
 	
-	//SetTileIndex(tileset, x+32*(1*xDir), y+32*(1*yDir), 0)
-	//SetTileIndex(tileset, x+64*(1*xDir), y+64*(1*yDir), 1)
-	
-	//SetTileIndex(tileset, x, y, 0)
-	//SetTileIndex(tileset, x+32*(-directions[0]), y+32*(-directions[1]), 1)	
+	if ((pos == 0 || pos == 12) || checkPlayerPositions)  {
+		
+		show_debug_message("Player0 XY: " + string(p0x) + ", " + string(p0y))
+		show_debug_message("Player1 XY: " + string(p1x) + ", " + string(p1y))
+		show_debug_message("Old Pos XY: " + string(xPos) + ", " + string(yPos))
+		show_debug_message("New Pos XY: " + string(xPos+xAdd) + ", " + string(yPos+yAdd))
+		show_debug_message("")
+
+		SetTileIndex(tileset, xPos, yPos, blockA)
+		SetTileIndex(tileset, xPos+xAdd, yPos+yAdd, blockB)
+	} else
+		x=x// fart noise
 }
 
 function GetTileIndex(tileset, xPos, yPos){

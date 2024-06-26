@@ -41,7 +41,9 @@
     {"id":{"name":"Obj_GrassTiles","path":"objects/Obj_GrassTiles/Obj_GrassTiles.yy",},},
     {"id":{"name":"Obj_Player","path":"objects/Obj_Player/Obj_Player.yy",},},
     {"id":{"name":"Obj_Player2","path":"objects/Obj_Player2/Obj_Player2.yy",},},
-    {"id":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
+    {"id":{"name":"Rm_Concept_1","path":"rooms/Rm_Concept_1/Rm_Concept_1.yy",},},
+    {"id":{"name":"Rm_Concept_2","path":"rooms/Rm_Concept_2/Rm_Concept_2.yy",},},
+    {"id":{"name":"Rm_Test","path":"rooms/Rm_Test/Rm_Test.yy",},},
     {"id":{"name":"Scr_Players","path":"scripts/Scr_Players/Scr_Players.yy",},},
     {"id":{"name":"Scr_Tileset","path":"scripts/Scr_Tileset/Scr_Tileset.yy",},},
     {"id":{"name":"chives","path":"sprites/chives/chives.yy",},},
@@ -55,7 +57,9 @@
   "resourceType":"GMProject",
   "resourceVersion":"2.0",
   "RoomOrderNodes":[
-    {"roomId":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
+    {"roomId":{"name":"Rm_Test","path":"rooms/Rm_Test/Rm_Test.yy",},},
+    {"roomId":{"name":"Rm_Concept_1","path":"rooms/Rm_Concept_1/Rm_Concept_1.yy",},},
+    {"roomId":{"name":"Rm_Concept_2","path":"rooms/Rm_Concept_2/Rm_Concept_2.yy",},},
   ],
   "templateType":"game",
   "TextureGroups":[
