@@ -3,12 +3,23 @@ function MovePlayer(left, right, down, up){
 		var xDirection = keyboard_check_pressed(right)-keyboard_check_pressed(left)
 		var yDirection = keyboard_check_pressed(down)-keyboard_check_pressed(up)
 		
-		if xDirection != 0 {
-			x += 32*xDirection
-			SetLastDirection(xDirection, 0)
-		} else if yDirection != 0 {
-			y += 32*yDirection
-			SetLastDirection(0, yDirection)
+		var newX = x+32*xDirection
+		var newY = y+32*yDirection
+		var tileInWay = GetTileIndex("Tiles", newX, newY)
+		if (tileInWay != 9 && tileInWay != 13) {
+			if tileInWay == 1 {
+				SetTileIndex("Tiles", x+32*(1*xDirection), y+32*(1*yDirection), 0)
+				SetTileIndex("Tiles", x+64*(1*xDirection), y+64*(1*yDirection), 1)
+
+			} else {
+				if xDirection != 0 {
+					x = newX
+					SetLastDirection(xDirection, 0)
+				} else if yDirection != 0 {
+					y = newY
+					SetLastDirection(0, yDirection)
+				}
+			}
 		}
 		
 		
