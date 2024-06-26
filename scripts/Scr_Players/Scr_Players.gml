@@ -2,10 +2,15 @@ function MovePlayer(left, right, down, up){
 	if (canMove && keyboard_check_pressed(vk_anykey)) {
 		var xDirection = keyboard_check_pressed(right)-keyboard_check_pressed(left)
 		var yDirection = keyboard_check_pressed(down)-keyboard_check_pressed(up)
-
-		x += 32*xDirection
-		y += 32*yDirection
-		SetLastDirection(xDirection, yDirection)
+		
+		if xDirection != 0 {
+			x += 32*xDirection
+			SetLastDirection(xDirection, 0)
+		} else if yDirection != 0 {
+			y += 32*yDirection
+			SetLastDirection(0, yDirection)
+		}
+		
 		
 		CheckIfTogether()
 	}
@@ -17,7 +22,7 @@ function SetLastDirection(xDir, yDir){
 }
 
 function UseAbility(input) {
-	if keyboard_check_pressed(input) && abilityCooldown <= 0 {
+	if keyboard_check_pressed(input) {
 		if playerIndex == 0
 			UseGrapplingHook(id)
 		else if playerIndex == 1
@@ -26,15 +31,16 @@ function UseAbility(input) {
 }
 
 function UseGrapplingHook(player) {
-	abilityCooldown = setAbilityCooldown
-	with instance_create_layer(x, y, "Instances", Obj_GrappleHook) {
-		creator = player
-		x = creator.x;
-		y = creator.y;
-		directions = player.lastDirection
-		direction = point_direction(0, 0, directions[0], -directions[1])
-		show_debug_message(string(directions) + " " + string(direction))
-	}
+	if !instance_exists(Obj_GrappleHook)
+		with instance_create_layer(x, y, "Instances", Obj_GrappleHook) {
+			creator = player
+			x = creator.x;
+			y = creator.y;
+			directions = player.lastDirection
+			direction = point_direction(0, 0, directions[0], -directions[1])
+			show_debug_message(string(directions) + " " + string(direction))
+		}
+	canMove = false
 }
 
 function UseBoxingGlove(player) {
