@@ -8,3 +8,13 @@ function GetTileIndex(tileset, xPos, yPos){
 	
 	return data
 }
+
+function GetTilePosition(tileset, xPos, yPos){
+	var lay_id = layer_get_id("Tiles");
+	var map_id = layer_tilemap_get_id(lay_id);
+	var tx = tilemap_get_x(map_id), ty = tilemap_get_y(map_id), tw = tilemap_get_tile_width(map_id), th = tilemap_get_tile_height(map_id);
+	var xx = (x - tx) div tw * tw + tx;
+	var yy = (y - ty) div th * th + ty;
+	
+	return [xx, yy]
+}
