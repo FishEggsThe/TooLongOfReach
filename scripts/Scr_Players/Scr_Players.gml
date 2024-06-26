@@ -31,15 +31,13 @@ function UseGrapplingHook(player) {
 		creator = player
 		x = creator.x;
 		y = creator.y;
-		maxDistance = 32*3
-		projSpeed = 6
 		directions = player.lastDirection
-		direction = radtodeg(arcsin(directions[1]) + arccos(directions[0]))
+		direction = point_direction(0, 0, directions[0], -directions[1])
 		show_debug_message(string(directions) + " " + string(direction))
 	}
 }
 
-function UseBoxingGlove(id) {
+function UseBoxingGlove(player) {
 	
 }
 
