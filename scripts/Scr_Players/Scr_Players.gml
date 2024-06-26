@@ -5,6 +5,8 @@ function MovePlayer(left, right, down, up){
 
 		x += 32*xDirection
 		y += 32*yDirection
+		
+		CheckIfTogether()
 	}
 }
 
@@ -21,7 +23,18 @@ function UseGrapplingHook() {
 	abilityCooldown = setAbilityCooldown
 	
 	GetTileIndex("Tiles", x, y)
+	CheckIfTogether()
 }
 
 function UseBoxingGlove() {
+	
+}
+
+function CheckIfTogether() {
+	if playerIndex == 0 {
+		distanceBetween = point_distance(x, y, Obj_Player2.x, Obj_Player2.y)
+		show_debug_message(distanceBetween)
+		if distanceBetween < 33
+			global.together = true;
+	}
 }
