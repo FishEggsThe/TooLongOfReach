@@ -11,8 +11,11 @@ if extend {
 				var dist = 0
 				var going = true
 				while (going){
-					going = PushOrPullBlock("Tiles", x+dist*directions[0], y+dist*directions[1],
-											directions[0]*(32+dist), directions[1]*(32+dist), 0, 1)
+					var distDirX = dist*directions[0]
+					var distDirY = dist*directions[1]
+
+					going = PushOrPullBlock("Tiles", x+distDirX, y+dist*distDirY,
+											directions[0]*32, directions[1]*32, 0, 1)
 					dist += 32
 				}
 				punched = true
