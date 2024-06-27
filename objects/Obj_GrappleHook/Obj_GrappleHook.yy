@@ -32,8 +32,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"chives",
-    "path":"sprites/chives/chives.yy",
+    "name":"Spr_GrappleHook",
+    "path":"sprites/Spr_GrappleHook/Spr_GrappleHook.yy",
   },
   "spriteMaskId":null,
   "visible":true,

@@ -21,8 +21,9 @@ function PushOrPullBlock(tileset, xPos, yPos, xAdd, yAdd, blockA, blockB){
 
 		SetTileIndex(tileset, xPos, yPos, blockA)
 		SetTileIndex(tileset, xPos+xAdd, yPos+yAdd, blockB)
+		return true
 	} else
-		x=x// fart noise
+		return false
 }
 
 function GetTileIndex(tileset, xPos, yPos){

@@ -8,9 +8,13 @@ if extend {
 			y = oY+i*directions[1]
 			var pos = GetTileIndex("Tiles", x, y)
 			if pos == 1 {
-				//while (false){
-				//	PushOrPullBlock("Tiles", x, y, directions[0]*32, directions[1]*32, 0, 1)
-				//}
+				var dist = 0
+				var going = true
+				while (going){
+					going = PushOrPullBlock("Tiles", x+dist*directions[0], y+dist*directions[1],
+											directions[0]*(32+dist), directions[1]*(32+dist), 0, 1)
+					dist += 32
+				}
 				punched = true
 				break;
 			}
