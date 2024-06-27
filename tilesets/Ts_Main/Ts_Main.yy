@@ -1,13 +1,13 @@
 {
   "$GMTileSet":"",
-  "%Name":"TileSet1",
+  "%Name":"Ts_Main",
   "autoTileSets":[],
   "macroPageTiles":{
     "SerialiseHeight":0,
     "SerialiseWidth":0,
     "TileSerialiseData":[],
   },
-  "name":"TileSet1",
+  "name":"Ts_Main",
   "out_columns":5,
   "out_tilehborder":2,
   "out_tilevborder":2,
