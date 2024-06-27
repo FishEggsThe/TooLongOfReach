@@ -10,6 +10,7 @@ function MovePlayer(left, right, down, up){
 }
 
 function TileCollision(xDir, yDir){
+	SetLastDirection(xDir, yDir)
 	var addX = 32*xDir
 	var addY = 32*yDir
 	var newX = x+addX
@@ -24,14 +25,15 @@ function TileCollision(xDir, yDir){
 			} else {
 				if xDir != 0 {
 					x = newX
-					SetLastDirection(xDir, 0)
+					//SetLastDirection(xDir, 0)
 				} else if yDir != 0 {
 					y = newY
-					SetLastDirection(0, yDir)
+					//SetLastDirection(0, yDir)
 				}
 				var waterInWay = GetTileIndex("Tiles_Water", x, y)
 				if waterInWay > 0 {
 					canMove = false
+					//alive = false
 					sprite_index = Spr_WaterSplash
 					image_speed = 1
 				}
@@ -40,7 +42,12 @@ function TileCollision(xDir, yDir){
 }
 
 function SetLastDirection(xDir, yDir){
-	lastDirection = [xDir, yDir]
+	if (xDir == 0 && yDir ==0)
+		return
+	else if xDir != 0
+		lastDirection = [xDir, 0]
+	else
+		lastDirection = [0, yDir]
 	//show_debug_message(string(playerIndex) + ": " + string(lastDirection))
 }
 
@@ -64,7 +71,9 @@ function CheckIfTogether() {
 	with instance_find(Obj_Player, 0) {
 		var distanceBetween = point_distance(x, y, Obj_Player2.x, Obj_Player2.y)
 		//show_debug_message(distanceBetween)
-		if distanceBetween < 33
+		if (sprite_index != Spr_WaterSplash && 
+			Obj_Player2.sprite_index != Spr_WaterSplash && 
+			distanceBetween < 33)
 			global.together = true;
 	}
 }
