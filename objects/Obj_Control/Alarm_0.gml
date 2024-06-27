@@ -1,1 +1,0 @@
-SetTileIndex("Tiles", debugMouseX, debugMouseY, 14)

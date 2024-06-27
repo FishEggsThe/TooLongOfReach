@@ -41,4 +41,5 @@ for(var i = 0; i < room_width; i+=32) {
 	}
 }
 show_debug_message(dummyPillars)
-setAlarm = 6
+gloveX = 0
+gloveY = 0

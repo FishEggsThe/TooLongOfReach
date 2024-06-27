@@ -1,7 +1,9 @@
 x = 0;
 y = 0;
 maxDistance = 32*4
-//projSpeed = 6
+extend = true
+alarm[0] = 6
 creator = noone
 directions = [0, 0]
 direction = noone
+punched = false

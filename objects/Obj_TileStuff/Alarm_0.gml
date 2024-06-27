@@ -1,1 +1,1 @@
-//SetTileIndex("Tiles", debugMouseX, debugMouseY, 14)
+SetTileIndex("Tiles", gloveX, gloveY, 14)
