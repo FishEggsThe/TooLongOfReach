@@ -29,12 +29,17 @@
           -3,4,-4,0,-15,4,-6,0,-5,4,5,0,4,4,0,0,-4,4,-2,0,-2,4,-2,0,-4,4,-2,0,-2,4,1,0,-5,4,-2,0,-2,4,-2,0,-4,
           4,-6,0,-22,4,
         ],"TileDataFormat":1,},"tilesetId":{"name":"Ts_Grass","path":"tilesets/Ts_Grass/Ts_Grass.yy",},"userdefinedDepth":false,"visible":true,"x":0,"y":0,},
-    {"$GMRTileLayer":"","%Name":"Tiles_Water","depth":300,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"name":"Tiles_Water","properties":[],"resourceType":"GMRTileLayer","resourceVersion":"2.0","tiles":{"SerialiseHeight":10,"SerialiseWidth":10,"TileCompressedData":[
-          -3,-2147483648,4,15,16,16,17,-15,-2147483648,6,31,2,32,32,2,3,-5,-2147483648,5,13,-2147483648,-2147483648,
-          8,10,-4,-2147483648,6,1,30,-2147483648,-2147483648,8,17,-4,-2147483648,5,8,30,-2147483648,-2147483648,
-          13,-5,-2147483648,6,8,30,-2147483648,-2147483648,11,23,-4,-2147483648,6,35,16,32,32,36,37,-22,-2147483648,
+    {"$GMRTileLayer":"","%Name":"Tiles_Cliffs","depth":300,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"name":"Tiles_Cliffs","properties":[],"resourceType":"GMRTileLayer","resourceVersion":"2.0","tiles":{"SerialiseHeight":10,"SerialiseWidth":10,"TileCompressedData":[
+          -3,-2147483648,4,40,28,28,38,-15,-2147483648,6,43,23,33,33,22,36,-5,-2147483648,5,32,-2147483648,-2147483648,
+          16,24,-4,-2147483648,6,34,26,-2147483648,-2147483648,18,38,-4,-2147483648,5,16,24,-2147483648,-2147483648,
+          32,-5,-2147483648,6,16,24,-2147483648,-2147483648,17,36,-4,-2147483648,6,40,30,33,33,29,38,-22,-2147483648,
+        ],"TileDataFormat":1,},"tilesetId":{"name":"Ts_Cliffs","path":"tilesets/Ts_Cliffs/Ts_Cliffs.yy",},"userdefinedDepth":false,"visible":true,"x":0,"y":0,},
+    {"$GMRTileLayer":"","%Name":"Tiles_Water","depth":400,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"name":"Tiles_Water","properties":[],"resourceType":"GMRTileLayer","resourceVersion":"2.0","tiles":{"SerialiseHeight":10,"SerialiseWidth":10,"TileCompressedData":[
+          -3,-2147483648,-4,1,-15,-2147483648,-6,1,-5,-2147483648,5,1,-2147483648,-2147483648,1,1,-4,-2147483648,
+          -2,1,-2,-2147483648,-2,1,-4,-2147483648,-2,1,-2,-2147483648,1,1,-5,-2147483648,-2,1,-2,-2147483648,-2,
+          1,-4,-2147483648,-6,1,-22,-2147483648,
         ],"TileDataFormat":1,},"tilesetId":{"name":"Ts_Water","path":"tilesets/Ts_Water/Ts_Water.yy",},"userdefinedDepth":false,"visible":true,"x":0,"y":0,},
-    {"$GMRBackgroundLayer":"","%Name":"Background","animationFPS":15.0,"animationSpeedType":0,"colour":4291585034,"depth":400,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"hspeed":0.0,"htiled":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"name":"Background","properties":[],"resourceType":"GMRBackgroundLayer","resourceVersion":"2.0","spriteId":null,"stretch":false,"userdefinedAnimFPS":false,"userdefinedDepth":false,"visible":true,"vspeed":0.0,"vtiled":false,"x":0,"y":0,},
+    {"$GMRBackgroundLayer":"","%Name":"Background","animationFPS":15.0,"animationSpeedType":0,"colour":4291585034,"depth":500,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"hspeed":0.0,"htiled":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"name":"Background","properties":[],"resourceType":"GMRBackgroundLayer","resourceVersion":"2.0","spriteId":null,"stretch":false,"userdefinedAnimFPS":false,"userdefinedDepth":false,"visible":true,"vspeed":0.0,"vtiled":false,"x":0,"y":0,},
   ],
   "name":"Rm_Concept_3",
   "parent":{

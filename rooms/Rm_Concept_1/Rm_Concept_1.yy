@@ -29,13 +29,18 @@
           -11,0,-8,4,-2,0,1,4,-4,0,-3,4,-2,0,1,4,-4,0,-3,4,-2,0,1,4,-4,0,-3,4,-2,0,1,4,-4,0,-3,4,-2,0,1,4,-6,0,
           4,4,0,0,4,-6,0,3,4,0,0,-8,4,-11,0,
         ],"TileDataFormat":1,},"tilesetId":{"name":"Ts_Grass","path":"tilesets/Ts_Grass/Ts_Grass.yy",},"userdefinedDepth":false,"visible":true,"x":0,"y":0,},
-    {"$GMRTileLayer":"","%Name":"Tiles_Water","depth":300,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"name":"Tiles_Water","properties":[],"resourceType":"GMRTileLayer","resourceVersion":"2.0","tiles":{"SerialiseHeight":10,"SerialiseWidth":10,"TileCompressedData":[
-          1,4,-8,16,2,5,10,-8,-2147483648,7,8,10,-2147483648,1,2,2,3,-3,-2147483648,7,8,10,-2147483648,8,9,9,10,
-          -3,-2147483648,7,8,10,-2147483648,8,9,9,10,-3,-2147483648,7,8,10,-2147483648,8,9,9,10,-3,-2147483648,
-          14,8,10,-2147483648,8,9,9,11,2,3,-2147483648,8,10,-2147483648,15,-4,16,4,17,-2147483648,8,10,-8,-2147483648,
-          2,8,25,-8,2,1,12,
+    {"$GMRTileLayer":"","%Name":"Tiles_Cliffs","depth":300,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"name":"Tiles_Cliffs","properties":[],"resourceType":"GMRTileLayer","resourceVersion":"2.0","tiles":{"SerialiseHeight":10,"SerialiseWidth":10,"TileCompressedData":[
+          1,4,-8,28,2,8,24,-8,-2147483648,7,16,24,-2147483648,34,20,20,36,-3,-2147483648,7,16,24,-2147483648,16,
+          48,48,24,-3,-2147483648,7,16,24,-2147483648,16,48,48,24,-3,-2147483648,7,16,24,-2147483648,16,48,48,
+          24,-3,-2147483648,14,16,24,-2147483648,16,48,48,2,20,36,-2147483648,16,24,-2147483648,40,-4,28,4,38,
+          -2147483648,16,24,-8,-2147483648,2,16,2,-8,20,1,1,
+        ],"TileDataFormat":1,},"tilesetId":{"name":"Ts_Cliffs","path":"tilesets/Ts_Cliffs/Ts_Cliffs.yy",},"userdefinedDepth":false,"visible":true,"x":0,"y":0,},
+    {"$GMRTileLayer":"","%Name":"Tiles_Water","depth":400,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"name":"Tiles_Water","properties":[],"resourceType":"GMRTileLayer","resourceVersion":"2.0","tiles":{"SerialiseHeight":10,"SerialiseWidth":10,"TileCompressedData":[
+          -11,1,-8,-2147483648,-2,1,1,-2147483648,-4,1,-3,-2147483648,-2,1,1,-2147483648,-4,1,-3,-2147483648,-2,
+          1,1,-2147483648,-4,1,-3,-2147483648,-2,1,1,-2147483648,-4,1,-3,-2147483648,-2,1,1,-2147483648,-6,1,4,
+          -2147483648,1,1,-2147483648,-6,1,3,-2147483648,1,1,-8,-2147483648,-11,1,
         ],"TileDataFormat":1,},"tilesetId":{"name":"Ts_Water","path":"tilesets/Ts_Water/Ts_Water.yy",},"userdefinedDepth":false,"visible":true,"x":0,"y":0,},
-    {"$GMRBackgroundLayer":"","%Name":"Background","animationFPS":15.0,"animationSpeedType":0,"colour":4291585034,"depth":400,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"hspeed":0.0,"htiled":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"name":"Background","properties":[],"resourceType":"GMRBackgroundLayer","resourceVersion":"2.0","spriteId":null,"stretch":false,"userdefinedAnimFPS":false,"userdefinedDepth":false,"visible":true,"vspeed":0.0,"vtiled":false,"x":0,"y":0,},
+    {"$GMRBackgroundLayer":"","%Name":"Background","animationFPS":15.0,"animationSpeedType":0,"colour":4291585034,"depth":500,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"hspeed":0.0,"htiled":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"name":"Background","properties":[],"resourceType":"GMRBackgroundLayer","resourceVersion":"2.0","spriteId":null,"stretch":false,"userdefinedAnimFPS":false,"userdefinedDepth":false,"visible":true,"vspeed":0.0,"vtiled":false,"x":0,"y":0,},
   ],
   "name":"Rm_Concept_1",
   "parent":{
