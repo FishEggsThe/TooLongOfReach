@@ -64,13 +64,14 @@ function ToggleDummyPillars(){
 			var mx = tilemap_get_cell_x_at_pixel(map_id, dummyPillars[i][1], dummyPillars[i][2]);
 			var my = tilemap_get_cell_y_at_pixel(map_id, dummyPillars[i][1], dummyPillars[i][2]);
 			var data = tilemap_get(map_id, mx, my);
-			
 			if data == 12 {
 				dummyPillars[i][0] = 13
 				SetTileIndex("Tiles", dummyPillars[i][1], dummyPillars[i][2], dummyPillars[i][0])
+				//alarm[0] = setAlarm
 			} else if data == 13 {
 				dummyPillars[i][0] = 12
 				SetTileIndex("Tiles", dummyPillars[i][1], dummyPillars[i][2], dummyPillars[i][0])
+				//alarm[0] = setAlarm
 			}
 		}
 	}
