@@ -1,6 +1,7 @@
 playerIndex = 0
 canMove = true
 alive = true
+image_speed = 0
 
 abilityCooldown = 0
 setAbilityCooldown = 60

@@ -3,5 +3,10 @@ if instance_exists(playerAbility) {
 					1, point_direction(x, y, x+lastDirection[0], y+lastDirection[1]), c_white, 1)
 }
 
-draw_sprite_ext(sprite_index, image_index, x, y, 
+var spriteDirection = point_direction(x, y, x+lastDirection[0], y+lastDirection[1])/90
+if (global.together || image_speed > 0) {
+	spriteDirection = image_index
+	image_speed = 1	
+}
+draw_sprite_ext(sprite_index, spriteDirection, x, y, 
 				image_xscale, image_yscale, 0, c_white, alive)

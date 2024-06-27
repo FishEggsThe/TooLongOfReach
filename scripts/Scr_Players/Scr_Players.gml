@@ -33,7 +33,7 @@ function TileCollision(xDir, yDir){
 				if waterInWay > 0 {
 					canMove = false
 					sprite_index = Spr_WaterSplash
-					//drown
+					image_speed = 1
 				}
 			}
 		}
@@ -61,8 +61,8 @@ function UseAbility(input, player) {
 }
 
 function CheckIfTogether() {
-	if playerIndex == 0 {
-		distanceBetween = point_distance(x, y, Obj_Player2.x, Obj_Player2.y)
+	with instance_find(Obj_Player, 0) {
+		var distanceBetween = point_distance(x, y, Obj_Player2.x, Obj_Player2.y)
 		//show_debug_message(distanceBetween)
 		if distanceBetween < 33
 			global.together = true;

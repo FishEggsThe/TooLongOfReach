@@ -1,5 +1,7 @@
 if global.together {
 	//show_debug_message(":3")
+	with Obj_Player
+		canMove = false
 }
 
 if keyboard_check_pressed(ord("I")) {
