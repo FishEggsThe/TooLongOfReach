@@ -1,4 +1,4 @@
-// this is a fucking mess I am so sorry Iwas trying to figure out why it wasn't working
+// this is a fucking mess I am so sorry I was trying to figure out why it wasn't working
 function PushOrPullBlock(tileset, xPos, yPos, xAdd, yAdd, blockA, blockB){
 	var pos = GetTileIndex(tileset, xPos+xAdd, yPos+yAdd)
 	var p0x = instance_id_get(0).x

@@ -38,13 +38,19 @@ function SetLastDirection(xDir, yDir){
 	//show_debug_message(string(playerIndex) + ": " + string(lastDirection))
 }
 
-function UseAbility(input) {
-	if keyboard_check_pressed(input) {
-		if playerIndex == 0
-			UseGrapplingHook(id)
-		else if playerIndex == 1
-			UseBoxingGlove(id)
-	}
+function UseAbility(input, player) {
+	var ability = (playerIndex == 0 ? Obj_GrappleHook : Obj_BoxingGlove)
+	
+	if !instance_exists(ability)
+		with instance_create_layer(x, y, "Instances", ability) {
+			creator = player
+			x = creator.x+16;
+			y = creator.y+16;
+			directions = player.lastDirection
+			direction = point_direction(0, 0, directions[0], directions[1])
+			//show_debug_message(string(directions) + " " + string(direction))
+		}
+	canMove = false
 }
 
 function UseGrapplingHook(player) {
@@ -63,7 +69,12 @@ function UseGrapplingHook(player) {
 function UseBoxingGlove(player) {
 	if !instance_exists(Obj_BoxingGlove)
 		with instance_create_layer(x, y, "Instances", Obj_BoxingGlove) {
-			
+			creator = player
+			x = creator.x+16;
+			y = creator.y+16;
+			directions = player.lastDirection
+			direction = point_direction(0, 0, directions[0], directions[1])
+			//show_debug_message(string(directions) + " " + string(direction))
 		}
 	canMove = false
 }
