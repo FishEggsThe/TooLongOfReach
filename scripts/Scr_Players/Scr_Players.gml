@@ -51,8 +51,8 @@ function UseGrapplingHook(player) {
 	if !instance_exists(Obj_GrappleHook)
 		with instance_create_layer(x, y, "Instances", Obj_GrappleHook) {
 			creator = player
-			x = creator.x;
-			y = creator.y;
+			x = creator.x+16;
+			y = creator.y+16;
 			directions = player.lastDirection
 			direction = point_direction(0, 0, directions[0], directions[1])
 			//show_debug_message(string(directions) + " " + string(direction))

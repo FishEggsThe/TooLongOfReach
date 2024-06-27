@@ -14,7 +14,7 @@ function PushOrPullBlock(tileset, xPos, yPos, xAdd, yAdd, blockA, blockB){
 	//show_debug_message("Player1 XY: " + string(p1x) + ", " + string(p1y))
 	//show_debug_message("Old Pos XY: " + string(xPos) + ", " + string(yPos))
 	//show_debug_message("New Pos XY: " + string(xPos+xAdd) + ", " + string(yPos+yAdd))
-	show_debug_message(string((pos == 0 || pos == 12)) + " + " + string(checkPlayer0) + " " + string(checkPlayer1) + " = " + string(finalBool))
+	//show_debug_message(string((pos == 0 || pos == 12)) + " + " + string(checkPlayer0) + " " + string(checkPlayer1) + " = " + string(finalBool))
 	if (finalBool)  {
 		
 		show_debug_message("")
@@ -53,4 +53,25 @@ function GetTilePosition(tileset, xPos, yPos){
 	var yy = (y - ty) div th * th + ty;
 	
 	return [xx, yy]
+}
+
+function ToggleDummyPillars(){
+	with Obj_TileStuff {
+		var lay_id = layer_get_id("Tiles");
+		var map_id = layer_tilemap_get_id(lay_id);
+		
+		for(var i = 0; i < array_length(dummyPillars); i++) {
+			var mx = tilemap_get_cell_x_at_pixel(map_id, dummyPillars[i][1], dummyPillars[i][2]);
+			var my = tilemap_get_cell_y_at_pixel(map_id, dummyPillars[i][1], dummyPillars[i][2]);
+			var data = tilemap_get(map_id, mx, my);
+			
+			if data == 12 {
+				dummyPillars[i][0] = 13
+				SetTileIndex("Tiles", dummyPillars[i][1], dummyPillars[i][2], dummyPillars[i][0])
+			} else if data == 13 {
+				dummyPillars[i][0] = 12
+				SetTileIndex("Tiles", dummyPillars[i][1], dummyPillars[i][2], dummyPillars[i][0])
+			}
+		}
+	}
 }

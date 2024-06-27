@@ -19,6 +19,7 @@ if global.debug {
 		if (tileI == 3 || tileI == 14) {
 			SetTileIndex("Tiles", debugMouseX, debugMouseY, 3)
 			alarm[0] = setAlarm
+			ToggleDummyPillars()
 		}
 	}
 	

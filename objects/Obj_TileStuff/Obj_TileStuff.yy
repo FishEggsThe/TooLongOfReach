@@ -1,11 +1,11 @@
 {
   "$GMObject":"",
-  "%Name":"Obj_GrassTiles",
+  "%Name":"Obj_TileStuff",
   "eventList":[
     {"$GMEvent":"","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"Obj_GrassTiles",
+  "name":"Obj_TileStuff",
   "overriddenProperties":[],
   "parent":{
     "name":"Objects",
