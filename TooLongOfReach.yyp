@@ -49,6 +49,8 @@
     {"id":{"name":"chives","path":"sprites/chives/chives.yy",},},
     {"id":{"name":"Spr_BoxingGlove","path":"sprites/Spr_BoxingGlove/Spr_BoxingGlove.yy",},},
     {"id":{"name":"Spr_BoxingSpring","path":"sprites/Spr_BoxingSpring/Spr_BoxingSpring.yy",},},
+    {"id":{"name":"Spr_GrappleHook","path":"sprites/Spr_GrappleHook/Spr_GrappleHook.yy",},},
+    {"id":{"name":"Spr_GrappleRope","path":"sprites/Spr_GrappleRope/Spr_GrappleRope.yy",},},
     {"id":{"name":"Spr_Grass","path":"sprites/Spr_Grass/Spr_Grass.yy",},},
     {"id":{"name":"Spr_MainTiles","path":"sprites/Spr_MainTiles/Spr_MainTiles.yy",},},
     {"id":{"name":"Spr_Player","path":"sprites/Spr_Player/Spr_Player.yy",},},
