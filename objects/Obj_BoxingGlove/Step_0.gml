@@ -30,6 +30,9 @@ if extend {
 				ToggleDummyPillars()
 				punched = true
 				break;
+			} else if (pos != 0 && pos != 12) {
+				punched = true
+				break;
 			}
 		}
 	}
