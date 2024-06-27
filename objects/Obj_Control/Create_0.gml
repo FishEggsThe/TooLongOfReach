@@ -1,6 +1,6 @@
-global.debug = false
-global.together = false
-
-debugMouseX = 0
-debugMouseY = 0
-setAlarm = 6
+if instance_number(Obj_Control) > 1 {
+	instance_destroy()
+} else {
+	global.debug = false
+	global.together = false
+}

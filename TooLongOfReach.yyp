@@ -43,6 +43,7 @@
     {"id":{"name":"Obj_TileStuff","path":"objects/Obj_TileStuff/Obj_TileStuff.yy",},},
     {"id":{"name":"Rm_Concept_1","path":"rooms/Rm_Concept_1/Rm_Concept_1.yy",},},
     {"id":{"name":"Rm_Concept_2","path":"rooms/Rm_Concept_2/Rm_Concept_2.yy",},},
+    {"id":{"name":"Rm_Concept_3","path":"rooms/Rm_Concept_3/Rm_Concept_3.yy",},},
     {"id":{"name":"Rm_Test","path":"rooms/Rm_Test/Rm_Test.yy",},},
     {"id":{"name":"Scr_Players","path":"scripts/Scr_Players/Scr_Players.yy",},},
     {"id":{"name":"Scr_Tileset","path":"scripts/Scr_Tileset/Scr_Tileset.yy",},},
@@ -64,6 +65,7 @@
     {"roomId":{"name":"Rm_Test","path":"rooms/Rm_Test/Rm_Test.yy",},},
     {"roomId":{"name":"Rm_Concept_1","path":"rooms/Rm_Concept_1/Rm_Concept_1.yy",},},
     {"roomId":{"name":"Rm_Concept_2","path":"rooms/Rm_Concept_2/Rm_Concept_2.yy",},},
+    {"roomId":{"name":"Rm_Concept_3","path":"rooms/Rm_Concept_3/Rm_Concept_3.yy",},},
   ],
   "templateType":"game",
   "TextureGroups":[
