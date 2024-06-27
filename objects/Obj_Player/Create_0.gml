@@ -1,5 +1,6 @@
 playerIndex = 0
 canMove = true
+alive = true
 
 abilityCooldown = 0
 setAbilityCooldown = 60
