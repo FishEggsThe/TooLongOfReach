@@ -10,11 +10,11 @@ function PushOrPullBlock(tileset, xPos, yPos, xAdd, yAdd, blockA, blockB){
 	var checkPlayerPositions = (checkPlayer0 && checkPlayer1)
 	var finalBool = ((pos == 0 || pos == 12) && checkPlayerPositions)
 	
-	//show_debug_message("Player0 XY: " + string(p0x) + ", " + string(p0y))
+	show_debug_message("Player0 XY: " + string(p0x) + ", " + string(p0y))
 	//show_debug_message("Player1 XY: " + string(p1x) + ", " + string(p1y))
 	//show_debug_message("Old Pos XY: " + string(xPos) + ", " + string(yPos))
-	//show_debug_message("New Pos XY: " + string(xPos+xAdd) + ", " + string(yPos+yAdd))
-	//show_debug_message(string((pos == 0 || pos == 12)) + " + " + string(checkPlayer0) + " " + string(checkPlayer1) + " = " + string(finalBool))
+	show_debug_message("New Pos XY: " + string(xPos+xAdd) + ", " + string(yPos+yAdd))
+	show_debug_message(string((pos == 0 || pos == 12)) + " + " + string(checkPlayer0) + " " + string(checkPlayer1) + " = " + string(finalBool))
 	if (finalBool)  {
 		
 		show_debug_message("")

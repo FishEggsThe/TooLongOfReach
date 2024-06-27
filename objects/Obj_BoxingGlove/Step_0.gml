@@ -14,7 +14,7 @@ if extend {
 					var distDirX = dist*directions[0]
 					var distDirY = dist*directions[1]
 
-					going = PushOrPullBlock("Tiles", x+distDirX, y+dist*distDirY,
+					going = PushOrPullBlock("Tiles", x+distDirX-16, y+distDirY-16,
 											directions[0]*32, directions[1]*32, 0, 1)
 					dist += 32
 				}
