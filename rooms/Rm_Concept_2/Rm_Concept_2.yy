@@ -22,8 +22,8 @@
         {"$GMRInstance":"","%Name":"inst_1668EC5_2","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_1668EC5_2","objectId":{"name":"Obj_Camera","path":"objects/Obj_Camera/Obj_Camera.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":32.0,"y":-32.0,},
       ],"layers":[],"name":"Instances","properties":[],"resourceType":"GMRInstanceLayer","resourceVersion":"2.0","userdefinedDepth":false,"visible":true,},
     {"$GMRTileLayer":"","%Name":"Tiles","depth":100,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"name":"Tiles","properties":[],"resourceType":"GMRTileLayer","resourceVersion":"2.0","tiles":{"SerialiseHeight":10,"SerialiseWidth":10,"TileCompressedData":[
-          -7,0,-3,-2147483648,-8,0,2,14,-2147483648,-3,13,-6,0,1,-2147483648,-9,0,1,-2147483648,-3,12,-14,0,3,
-          -2147483648,0,0,-3,13,-4,0,3,1,0,1,-20,0,1,-2147483648,-5,0,1,-2147483648,-3,0,
+          -7,0,-3,-2147483648,-8,0,2,14,-2147483648,-3,13,-6,0,1,-2147483648,-7,0,3,1,0,-2147483648,-7,0,1,1,-9,
+          0,1,1,-9,0,1,1,-9,0,1,1,-12,0,1,-2147483648,-5,0,1,-2147483648,-3,0,
         ],"TileDataFormat":1,},"tilesetId":{"name":"Ts_Main","path":"tilesets/Ts_Main/Ts_Main.yy",},"userdefinedDepth":false,"visible":true,"x":0,"y":0,},
     {"$GMRTileLayer":"","%Name":"Tiles_Grass","depth":200,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"name":"Tiles_Grass","properties":[],"resourceType":"GMRTileLayer","resourceVersion":"2.0","tiles":{"SerialiseHeight":10,"SerialiseWidth":10,"TileCompressedData":[
           -3,4,-7,0,-3,4,-5,0,2,4,0,-3,4,-7,0,-3,4,-4,0,-6,4,-4,0,-6,4,-4,0,-6,4,-4,0,-5,4,-5,0,-4,4,-5,0,-9,4,
