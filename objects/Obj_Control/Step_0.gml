@@ -10,14 +10,16 @@ if keyboard_check_pressed(ord("I")) {
 }
 
 if global.debug {
-	if keyboard_check_pressed(vk_f1) {
+	if keyboard_check_pressed(ord("1")) {
 		room_goto(0)
-	} else if keyboard_check_pressed(vk_f2) {
+	} else if keyboard_check_pressed(ord("2")) {
 		room_goto(1)
-	} else if keyboard_check_pressed(vk_f3) {
+	} else if keyboard_check_pressed(ord("3")) {
 		room_goto(2)
-	} else if keyboard_check_pressed(vk_f4) {
+	} else if keyboard_check_pressed(ord("4")) {
 		room_goto(3)
+	} else if keyboard_check_pressed(ord("5")) {
+		room_goto(4)
 	}
 	
 	if mouse_check_button_pressed(mb_left)

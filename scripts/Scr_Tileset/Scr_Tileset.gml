@@ -2,18 +2,18 @@
 function PushOrPullBlock(tileset, xPos, yPos, xAdd, yAdd, blockA, blockB){
 	var pos = GetTileIndex(tileset, xPos+xAdd, yPos+yAdd)
 	var posWater = GetTileIndex("Tiles_Water", xPos+xAdd, yPos+yAdd)
-	var p0x = instance_id_get(0).x
-	var p0y = instance_id_get(0).y
-	var p1x = instance_id_get(1).x
-	var p1y = instance_id_get(1).y
+	var p0x = instance_find(Obj_Player, 0).x
+	var p0y = instance_find(Obj_Player, 0).y
+	var p1x = instance_find(Obj_Player, 1).x
+	var p1y = instance_find(Obj_Player, 1).y
 	var checkPlayer0 = !(p0x == xPos+xAdd && p0y == yPos+yAdd)
 	var checkPlayer1 = !(p1x == xPos+xAdd && p1y == yPos+yAdd)
 	var checkPlayerPositions = (checkPlayer0 && checkPlayer1)
 	var finalBool = (pos == 0 && checkPlayerPositions)//((pos == 0 || pos == 12) && checkPlayerPositions)
 	
 	show_debug_message("Player0 XY: " + string(p0x) + ", " + string(p0y))
-	//show_debug_message("Player1 XY: " + string(p1x) + ", " + string(p1y))
-	//show_debug_message("Old Pos XY: " + string(xPos) + ", " + string(yPos))
+	show_debug_message("Player1 XY: " + string(p1x) + ", " + string(p1y))
+	show_debug_message("Old Pos XY: " + string(xPos) + ", " + string(yPos))
 	show_debug_message("New Pos XY: " + string(xPos+xAdd) + ", " + string(yPos+yAdd))
 	show_debug_message(string((pos == 0 || pos == 12 || posWater >= 3)) + " + " + string(checkPlayer0) + " " + string(checkPlayer1) + " = " + string(finalBool))
 	show_debug_message("")
