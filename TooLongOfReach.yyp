@@ -57,6 +57,7 @@
     {"id":{"name":"Rm_Concept_3","path":"rooms/Rm_Concept_3/Rm_Concept_3.yy",},},
     {"id":{"name":"Rm_MainMenu","path":"rooms/Rm_MainMenu/Rm_MainMenu.yy",},},
     {"id":{"name":"Rm_Test","path":"rooms/Rm_Test/Rm_Test.yy",},},
+    {"id":{"name":"Scr_Control","path":"scripts/Scr_Control/Scr_Control.yy",},},
     {"id":{"name":"Scr_Particles","path":"scripts/Scr_Particles/Scr_Particles.yy",},},
     {"id":{"name":"Scr_Players","path":"scripts/Scr_Players/Scr_Players.yy",},},
     {"id":{"name":"Scr_Tileset","path":"scripts/Scr_Tileset/Scr_Tileset.yy",},},
