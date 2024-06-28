@@ -4,8 +4,6 @@ function MovePlayer(left, right, down, up){
 		var yDirection = keyboard_check_pressed(down)-keyboard_check_pressed(up)
 		
 		TileCollision(xDirection, yDirection)
-		
-		CheckIfTogether()
 	}
 }
 
