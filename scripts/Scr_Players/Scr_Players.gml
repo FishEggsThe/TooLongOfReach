@@ -69,9 +69,7 @@ function CheckIfTogether() {
 	with instance_find(Obj_Player, 0) {
 		var distanceBetween = point_distance(x, y, Obj_Player2.x, Obj_Player2.y)
 		//show_debug_message(distanceBetween)
-		if (sprite_index != Spr_WaterSplash && 
-			Obj_Player2.sprite_index != Spr_WaterSplash && 
-			distanceBetween < 33)
+		if (alive && Obj_Player2.alive && distanceBetween < 33)
 			global.together = true;
 	}
 }

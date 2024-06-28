@@ -13,9 +13,11 @@ if keyboard_check_pressed(ord("I")) {
 }
 
 if global.debug {
-	for(var i = 0; i < 6; i++) {
+	var i = 0
+	while(room_exists(i)) {
 		if keyboard_check_pressed(ord(string(i)))
 			room_goto(i)
+		i++
 	}
 	
 	if mouse_check_button_pressed(mb_left)
