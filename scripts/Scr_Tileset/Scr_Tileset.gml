@@ -1,6 +1,7 @@
 // this is a fucking mess I am so sorry I was trying to figure out why it wasn't working
 function PushOrPullBlock(tileset, xPos, yPos, xAdd, yAdd, blockA, blockB){
 	var pos = GetTileIndex(tileset, xPos+xAdd, yPos+yAdd)
+	var posWater = GetTileIndex("Tiles_Water", xPos+xAdd, yPos+yAdd)
 	var p0x = instance_id_get(0).x
 	var p0y = instance_id_get(0).y
 	var p1x = instance_id_get(1).x
@@ -14,16 +15,24 @@ function PushOrPullBlock(tileset, xPos, yPos, xAdd, yAdd, blockA, blockB){
 	//show_debug_message("Player1 XY: " + string(p1x) + ", " + string(p1y))
 	//show_debug_message("Old Pos XY: " + string(xPos) + ", " + string(yPos))
 	show_debug_message("New Pos XY: " + string(xPos+xAdd) + ", " + string(yPos+yAdd))
-	show_debug_message(string((pos == 0 || pos == 12)) + " + " + string(checkPlayer0) + " " + string(checkPlayer1) + " = " + string(finalBool))
-	if (finalBool)  {
+	show_debug_message(string((pos == 0 || pos == 12 || posWater >= 3)) + " + " + string(checkPlayer0) + " " + string(checkPlayer1) + " = " + string(finalBool))
+	show_debug_message("")
 		
-		show_debug_message("")
-
+	if (finalBool)  {
 		SetTileIndex(tileset, xPos, yPos, blockA)
 		SetTileIndex(tileset, xPos+xAdd, yPos+yAdd, blockB)
 		return true
 	} else
 		return false
+}
+
+function CheckIfSubmerge(xPos, yPos){
+	var waterInWay = GetTileIndex("Tiles_Water",  xPos,  yPos)
+	if (waterInWay == 1 || waterInWay == 2){
+		SetTileIndex("Tiles",  xPos,  yPos, 0)
+		SetTileIndex("Tiles_Water", xPos, yPos, 0)
+		SetTileIndex("Tiles_Cliffs", xPos, yPos, 47)
+	}
 }
 
 function GetTileIndex(tileset, xPos, yPos){

@@ -3,7 +3,7 @@ y += directions[1]*projSpeed
 maxDistance -= abs((x-xprevious) + (y-yprevious))
 
 var currBlock = GetTileIndex("Tiles", x, y)
-show_debug_message(string(currBlock != 0) + string(currBlock != 12) + string((currBlock != 0 && currBlock != 12)))
+//show_debug_message(string(currBlock != 0) + string(currBlock != 12) + string((currBlock != 0 && currBlock != 12)))
 if ((currBlock != 0 && currBlock != 12) || maxDistance < 0) {
 	if currBlock == 2 {
 		var pos = GetTilePosition("Tiles", x, y)

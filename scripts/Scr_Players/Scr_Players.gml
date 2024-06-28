@@ -18,19 +18,18 @@ function TileCollision(xDir, yDir){
 	var tileInWay = GetTileIndex("Tiles", newX, newY)
 		if (tileInWay != 9 && tileInWay != 13 && tileInWay != (11-playerIndex)) { // waterInWay == 0 && 
 			if tileInWay == 1 {
-				PushOrPullBlock("Tiles", x+32*(1*xDir), y+32*(1*yDir), 
-								32*(1*xDir), 32*(1*yDir), 0, 1)
-				//SetTileIndex("Tiles", x+32*(1*xDir), y+32*(1*yDir), 0)
-				//SetTileIndex("Tiles", x+64*(1*xDir), y+64*(1*yDir), 1)
+				PushOrPullBlock("Tiles", x+32*xDir, y+32*yDir, 
+								32*xDir, 32*yDir, 0, 1)
+				CheckIfSubmerge( x+64*xDir,  y+64*yDir)
+								
 			} else {
 				if xDir != 0 {
 					x = newX
-					//SetLastDirection(xDir, 0)
 				} else if yDir != 0 {
 					y = newY
-					//SetLastDirection(0, yDir)
 				}
 				var waterInWay = GetTileIndex("Tiles_Water", x, y)
+				var checkForBox = GetTileIndex("Tiles_Cliffs", x, y)
 				if waterInWay > 0 {
 					canMove = false
 					//alive = false
