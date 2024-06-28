@@ -11,6 +11,6 @@ part_type_speed(type, 2, 3, 0, 0);
 
 part_type_sprite(type, a, true, false, false);
 
-alarm_set(0, 5);
+alarm_set(1, 5);
 
-alarm[1] = 60*3
+alarm[0] = 60*3

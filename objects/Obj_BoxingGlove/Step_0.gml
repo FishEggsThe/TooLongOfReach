@@ -19,7 +19,7 @@ if extend {
 					going = PushOrPullBlock("Tiles", x+distDirX-16, y+distDirY-16,
 											directions[0]*32, directions[1]*32, 0, 1)
 					dist += 32
-					instance_create_layer(x+distDirX-16,  y+distDirY-16, "Instances", Ps_Fire)
+					if going {SpawnParticle(x+distDirX,  y+distDirY, Ps_Fire, 30*(dist/32))}
 				}
 				CheckIfSubmerge(x+distDirX-16, y+distDirY-16)
 				punched = true
