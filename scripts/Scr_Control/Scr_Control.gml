@@ -15,7 +15,7 @@ function ShowLoseText(){
 		return
 	
 	var player0alive = instance_find(Obj_Player, 0).alive
-	var player1alive = instance_find(Obj_Player, 0).alive
+	var player1alive = instance_find(Obj_Player, 1).alive
 
 	if (player0alive && player1alive)
 		return
