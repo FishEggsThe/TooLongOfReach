@@ -54,6 +54,7 @@
     {"id":{"name":"Obj_Camera","path":"objects/Obj_Camera/Obj_Camera.yy",},},
     {"id":{"name":"Obj_Control","path":"objects/Obj_Control/Obj_Control.yy",},},
     {"id":{"name":"Obj_GrappleHook","path":"objects/Obj_GrappleHook/Obj_GrappleHook.yy",},},
+    {"id":{"name":"Obj_LevelSelect","path":"objects/Obj_LevelSelect/Obj_LevelSelect.yy",},},
     {"id":{"name":"Obj_Menu","path":"objects/Obj_Menu/Obj_Menu.yy",},},
     {"id":{"name":"obj_particleManager","path":"objects/obj_particleManager/obj_particleManager.yy",},},
     {"id":{"name":"Obj_Player","path":"objects/Obj_Player/Obj_Player.yy",},},

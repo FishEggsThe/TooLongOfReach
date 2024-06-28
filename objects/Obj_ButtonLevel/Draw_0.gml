@@ -1,5 +1,5 @@
 event_inherited()
-var levelNum = string(numberToDraw)
+var levelNum = string(roomID-2)
 var length = string_length(levelNum)
 var spacing = 11
 for(var i = 0; i < length; i++) {
