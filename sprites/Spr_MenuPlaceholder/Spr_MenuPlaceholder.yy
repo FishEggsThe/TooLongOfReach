@@ -2,9 +2,9 @@
   "$GMSprite":"",
   "%Name":"Spr_MenuPlaceholder",
   "bboxMode":0,
-  "bbox_bottom":596,
+  "bbox_bottom":319,
   "bbox_left":0,
-  "bbox_right":586,
+  "bbox_right":319,
   "bbox_top":0,
   "collisionKind":1,
   "collisionTolerance":0,
@@ -16,7 +16,7 @@
   ],
   "gridX":0,
   "gridY":0,
-  "height":597,
+  "height":320,
   "HTile":false,
   "layers":[
     {"$GMImageLayer":"","%Name":"a3b14410-8c45-499a-90b9-40ff6029f708","blendMode":0,"displayName":"default","isLocked":false,"name":"a3b14410-8c45-499a-90b9-40ff6029f708","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
@@ -25,8 +25,8 @@
   "nineSlice":null,
   "origin":0,
   "parent":{
-    "name":"Title Screen",
-    "path":"folders/Sprites/Title Screen.yy",
+    "name":"Menu",
+    "path":"folders/Sprites/Menu.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",
@@ -86,5 +86,5 @@
   },
   "type":0,
   "VTile":false,
-  "width":587,
+  "width":320,
 }

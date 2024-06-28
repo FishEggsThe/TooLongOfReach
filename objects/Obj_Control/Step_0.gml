@@ -10,7 +10,7 @@ if keyboard_check_pressed(ord("I")) {
 }
 
 if global.debug {
-	for(var i = 0; i < 5; i++) {
+	for(var i = 0; i < 6; i++) {
 		if keyboard_check_pressed(ord(string(i)))
 			room_goto(i)
 	}

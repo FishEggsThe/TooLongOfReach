@@ -31,7 +31,7 @@ function CheckIfSubmerge(xPos, yPos){
 	if (waterInWay == 1 || waterInWay == 2){
 		SetTileIndex("Tiles",  xPos,  yPos, 0)
 		SetTileIndex("Tiles_Water", xPos, yPos, 0)
-		SetTileIndex("Tiles_Cliffs", xPos, yPos, 47)
+		SetTileIndex("Tiles_BoxInWater", xPos, yPos, 48)
 	}
 }
 

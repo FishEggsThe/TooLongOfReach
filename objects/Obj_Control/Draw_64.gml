@@ -1,1 +1,2 @@
 ShowWinText()
+ShowLoseText()

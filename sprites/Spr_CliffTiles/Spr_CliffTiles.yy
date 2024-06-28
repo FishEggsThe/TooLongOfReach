@@ -2,7 +2,7 @@
   "$GMSprite":"",
   "%Name":"Spr_CliffTiles",
   "bboxMode":0,
-  "bbox_bottom":223,
+  "bbox_bottom":221,
   "bbox_left":0,
   "bbox_right":255,
   "bbox_top":0,
@@ -12,14 +12,14 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"2f5b5dcc-7c2f-42da-a5b9-5e10d6c48671","name":"2f5b5dcc-7c2f-42da-a5b9-5e10d6c48671","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"","%Name":"e62dd3f8-264f-4058-af43-5db9625a32be","name":"e62dd3f8-264f-4058-af43-5db9625a32be","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,
   "height":224,
   "HTile":false,
   "layers":[
-    {"$GMImageLayer":"","%Name":"14258e43-9a4e-49be-93c4-3a84759c67a5","blendMode":0,"displayName":"default","isLocked":false,"name":"14258e43-9a4e-49be-93c4-3a84759c67a5","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
+    {"$GMImageLayer":"","%Name":"9c21b1d3-d9f5-4da3-9210-84b9adbbedf9","blendMode":0,"displayName":"default","isLocked":false,"name":"9c21b1d3-d9f5-4da3-9210-84b9adbbedf9","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
   ],
   "name":"Spr_CliffTiles",
   "nineSlice":null,
@@ -69,8 +69,8 @@
     "tracks":[
       {"$GMSpriteFramesTrack":"","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"$KeyframeStore<SpriteFrameKeyframe>":"","Keyframes":[
             {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"2f5b5dcc-7c2f-42da-a5b9-5e10d6c48671","path":"sprites/Spr_CliffTiles/Spr_CliffTiles.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
-              },"Disabled":false,"id":"6ef7d6ed-8c18-4faa-905b-8a0533297391","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"e62dd3f8-264f-4058-af43-5db9625a32be","path":"sprites/Spr_CliffTiles/Spr_CliffTiles.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              },"Disabled":false,"id":"3b79cde8-52f8-4f98-a2b4-d5af5b4300ea","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
           ],"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"2.0",},"modifiers":[],"name":"frames","resourceType":"GMSpriteFramesTrack","resourceVersion":"2.0","spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange":null,

@@ -1,3 +1,7 @@
+var lay_id = layer_get_id("Background");
+var back_id = layer_background_get_id(lay_id);
+layer_background_blend(back_id, #0098DB)
+
 // Grass Randomization
 for(var i = 0; i < room_width; i+=32) {
 	for(var j = 0; j < room_height; j+=32) {

@@ -25,8 +25,8 @@
   "nineSlice":null,
   "origin":4,
   "parent":{
-    "name":"Title Screen",
-    "path":"folders/Sprites/Title Screen.yy",
+    "name":"Menu",
+    "path":"folders/Sprites/Menu.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

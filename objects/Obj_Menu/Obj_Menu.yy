@@ -3,14 +3,13 @@
   "%Name":"Obj_Menu",
   "eventList":[
     {"$GMEvent":"","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-    {"$GMEvent":"","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":8,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
   "name":"Obj_Menu",
   "overriddenProperties":[],
   "parent":{
-    "name":"Backend",
-    "path":"folders/Objects/Backend.yy",
+    "name":"Menu",
+    "path":"folders/Objects/Menu.yy",
   },
   "parentObjectId":null,
   "persistent":false,
@@ -30,7 +29,10 @@
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
-  "spriteId":null,
+  "spriteId":{
+    "name":"Spr_MenuPlaceholder",
+    "path":"sprites/Spr_MenuPlaceholder/Spr_MenuPlaceholder.yy",
+  },
   "spriteMaskId":null,
   "visible":true,
 }
