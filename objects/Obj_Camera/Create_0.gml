@@ -1,3 +1,7 @@
+if instance_number(Obj_Camera) > 1 {
+	instance_destroy()
+}
+
 x = 0
 y = 0
 

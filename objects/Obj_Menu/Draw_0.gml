@@ -1,0 +1,1 @@
+draw_sprite(Spr_MenuPlaceholder, 0, x, y)
