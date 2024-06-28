@@ -10,16 +10,9 @@ if keyboard_check_pressed(ord("I")) {
 }
 
 if global.debug {
-	if keyboard_check_pressed(ord("1")) {
-		room_goto(0)
-	} else if keyboard_check_pressed(ord("2")) {
-		room_goto(1)
-	} else if keyboard_check_pressed(ord("3")) {
-		room_goto(2)
-	} else if keyboard_check_pressed(ord("4")) {
-		room_goto(3)
-	} else if keyboard_check_pressed(ord("5")) {
-		room_goto(4)
+	for(var i = 0; i < 5; i++) {
+		if keyboard_check_pressed(ord(string(i)))
+			room_goto(i)
 	}
 	
 	if mouse_check_button_pressed(mb_left)
