@@ -1,3 +1,3 @@
 event_inherited()
-buttonSprite = Spr_PlayButton
+buttonSprite = Spr_ButtonPlay
 roomID = 1

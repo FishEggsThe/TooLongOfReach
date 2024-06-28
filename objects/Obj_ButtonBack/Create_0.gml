@@ -1,2 +1,2 @@
 event_inherited()
-//buttonSprite = Spr_GoBackButton
+buttonSprite = Spr_ButtonBack
