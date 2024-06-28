@@ -24,8 +24,7 @@ if extend {
 				CheckIfSubmerge(x+distDirX-16, y+distDirY-16)
 				punched = true
 				break;
-			}
-			else if (pos == 14 || pos == 21) {
+			} else if (pos == 14 || pos == 21) {
 				var dummyColor = (pos == 14 ? 0 : 1)
 				ToggleDummyPillars(dummyColor)
 				var dummyIndex = (dummyColor ? 8 : 4)
@@ -36,7 +35,12 @@ if extend {
 				
 				punched = true
 				break;
-			} else if (pos != 0 && pos != 12 && pos != (10+creator.playerIndex)) {
+			} else if pos == 9 {
+				PushOrPullBlock("Tiles", x-16, y-16, directions[0]*32, directions[1]*32, 0, 9)
+				CheckIfSubmerge((x-16)+directions[0]*32, (y-16)+directions[1]*32)
+				punched = true
+				break;
+			} else if (pos != 0 && pos != 12 && pos != 19 && pos != (10+creator.playerIndex)) {
 				punched = true
 				break;
 			}

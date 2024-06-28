@@ -4,7 +4,7 @@ maxDistance -= abs((x-xprevious) + (y-yprevious))
 
 var currBlock = GetTileIndex("Tiles", x, y)
 //show_debug_message(string(currBlock != 0) + string(currBlock != 12) + string((currBlock != 0 && currBlock != 12)))
-if ((currBlock != 0 && currBlock != 12 && currBlock != (10+creator.playerIndex)) || maxDistance < 0) {
+if ((currBlock != 0 && currBlock != 12 && currBlock != 19 && currBlock != (10+creator.playerIndex)) || maxDistance < 0) {
 	if currBlock == 2 {
 		var pos = GetTilePosition("Tiles", x, y)
 		creator.x = pos[0]

@@ -32,9 +32,8 @@ function TileCollision(xDir, yDir){
 			var checkForBox = GetTileIndex("Tiles_Cliffs", x, y)
 			if waterInWay > 0 {
 				canMove = false
-				//alive = false
-				sprite_index = Spr_WaterSplash
-				image_speed = 1
+				alive = false
+				instance_create_layer(x, y, "Instances", Obj_Splash)
 			}
 		}
 	}

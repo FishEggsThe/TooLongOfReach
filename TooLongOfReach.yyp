@@ -59,6 +59,7 @@
     {"id":{"name":"obj_particleManager","path":"objects/obj_particleManager/obj_particleManager.yy",},},
     {"id":{"name":"Obj_Player","path":"objects/Obj_Player/Obj_Player.yy",},},
     {"id":{"name":"Obj_Player2","path":"objects/Obj_Player2/Obj_Player2.yy",},},
+    {"id":{"name":"Obj_Splash","path":"objects/Obj_Splash/Obj_Splash.yy",},},
     {"id":{"name":"Obj_TileStuff","path":"objects/Obj_TileStuff/Obj_TileStuff.yy",},},
     {"id":{"name":"Ps_Fire","path":"objects/Ps_Fire/Ps_Fire.yy",},},
     {"id":{"name":"Ps_Smoke","path":"objects/Ps_Smoke/Ps_Smoke.yy",},},

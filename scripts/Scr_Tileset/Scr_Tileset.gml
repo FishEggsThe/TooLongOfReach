@@ -27,11 +27,15 @@ function PushOrPullBlock(tileset, xPos, yPos, xAdd, yAdd, blockA, blockB){
 }
 
 function CheckIfSubmerge(xPos, yPos){
+	var boxType = GetTileIndex("Tiles",  xPos,  yPos)
 	var waterInWay = GetTileIndex("Tiles_Water",  xPos,  yPos)
 	if (waterInWay == 1 || waterInWay == 2){
 		SetTileIndex("Tiles",  xPos,  yPos, 0)
-		SetTileIndex("Tiles_Water", xPos, yPos, 0)
-		SetTileIndex("Tiles_BoxInWater", xPos, yPos, 48)
+		if boxType == 1 {
+			SetTileIndex("Tiles_Water", xPos, yPos, 0)
+			SetTileIndex("Tiles_BoxInWater", xPos, yPos, 48)
+		}
+		instance_create_layer(xPos, yPos, "Instances", Obj_Splash)
 	}
 }
 
