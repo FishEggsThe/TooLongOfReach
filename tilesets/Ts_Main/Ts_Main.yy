@@ -28,14 +28,15 @@
   },
   "tileAnimation":{
     "FrameData":[
-      0,0,0,0,1,1,1,1,2,2,2,2,3,4,5,6,4,5,6,3,5,6,3,4,6,3,4,5,7,7,7,7,8,8,8,8,9,9,9,9,10,10,10,10,11,11,11,
-      11,12,12,12,12,13,13,13,13,14,14,14,14,15,15,15,15,16,16,16,16,17,17,17,17,18,18,18,18,19,19,19,19,20,
+      0,0,0,0,1,1,1,1,2,2,2,2,3,4,5,6,4,5,6,3,5,6,3,4,6,3,4,5,7,8,15,16,8,15,16,7,9,9,9,9,10,10,10,10,11,11,
+      11,11,12,12,12,12,13,13,13,13,14,14,14,14,15,16,7,8,16,7,8,15,17,17,17,17,18,18,18,18,19,19,19,19,20,
       20,20,20,21,21,21,21,22,22,22,22,23,23,23,23,
     ],
     "SerialiseFrameCount":4,
   },
   "tileAnimationFrames":[
     {"$GMTileAnimation":"","%Name":"Anim_DummyHit","frames":[4,5,6,3,],"name":"Anim_DummyHit","resourceType":"GMTileAnimation","resourceVersion":"2.0",},
+    {"$GMTileAnimation":"","%Name":"Anim_DummyBlueHit","frames":[8,15,16,7,],"name":"Anim_DummyBlueHit","resourceType":"GMTileAnimation","resourceVersion":"2.0",},
   ],
   "tileAnimationSpeed":10.0,
   "tileHeight":32,

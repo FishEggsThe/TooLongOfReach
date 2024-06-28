@@ -25,16 +25,15 @@ if extend {
 				punched = true
 				break;
 			}
-			else if (pos == 14 || pos == 7) {
-				if pos == 14 {
-					SetTileIndex("Tiles", x, y, 3)
-					Obj_TileStuff.alarm[0] = 6
-					Obj_TileStuff.gloveX = x
-					Obj_TileStuff.gloveY = y
-				} else if pos == 7 {
-					SetTileIndex("Tiles", x, y, 8)
-				}
-				ToggleDummyPillars()
+			else if (pos == 14 || pos == 21) {
+				var dummyColor = (pos == 14 ? 0 : 1)
+				ToggleDummyPillars(dummyColor)
+				var dummyIndex = (dummyColor ? 8 : 4)
+				SetTileIndex("Tiles", x, y, dummyIndex)
+				Obj_TileStuff.alarm[0] = 6
+				Obj_TileStuff.gloveX = x
+				Obj_TileStuff.gloveY = y
+				
 				punched = true
 				break;
 			} else if (pos != 0 && pos != 12 && pos != (10+creator.playerIndex)) {

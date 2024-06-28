@@ -12,13 +12,13 @@ for(var i = 0; i < room_width; i+=32) {
 }
 
 // Dummy Pillars initialization
-pillarsI = 0
-
+var pillarsI = 0
 for(var i = 0; i < room_width; i+=32) {
 	for(var j = 0; j < room_height; j+=32) {
 		var data = GetTileIndex("Tiles", i, j)
-		if (data == 12 || data == 13)
+		if ((data == 12 || data == 13) || (data == 19 || data == 20))
 			pillarsI++
+			
 	}
 }
 show_debug_message(pillarsI)
@@ -28,10 +28,14 @@ for(var i = 0; i < room_width; i+=32) {
 		var data = GetTileIndex("Tiles", i, j)
 		if (data == 12 || data == 13) {
 			pillarsI--
-			dummyPillars[pillarsI] = [data, i, j]
+			dummyPillars[pillarsI] = [data, i, j, 0]
+		} else if (data == 19 || data == 20) {
+			pillarsI--
+			dummyPillars[pillarsI] = [data, i, j, 1]
 		}
 	}
 }
 show_debug_message(dummyPillars)
 gloveX = 0
 gloveY = 0
+dummyColor = 0
