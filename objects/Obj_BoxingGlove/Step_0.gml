@@ -37,7 +37,7 @@ if extend {
 				ToggleDummyPillars()
 				punched = true
 				break;
-			} else if (pos != 0 && pos != 12) {
+			} else if (pos != 0 && pos != 12 && pos != (10+creator.playerIndex)) {
 				punched = true
 				break;
 			}
