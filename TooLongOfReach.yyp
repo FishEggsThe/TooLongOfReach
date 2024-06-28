@@ -65,6 +65,7 @@
     {"id":{"name":"Rm_Concept_1","path":"rooms/Rm_Concept_1/Rm_Concept_1.yy",},},
     {"id":{"name":"Rm_Concept_2","path":"rooms/Rm_Concept_2/Rm_Concept_2.yy",},},
     {"id":{"name":"Rm_Concept_3","path":"rooms/Rm_Concept_3/Rm_Concept_3.yy",},},
+    {"id":{"name":"Rm_Empty","path":"rooms/Rm_Empty/Rm_Empty.yy",},},
     {"id":{"name":"Rm_MenuLevelSelect","path":"rooms/Rm_MenuLevelSelect/Rm_MenuLevelSelect.yy",},},
     {"id":{"name":"Rm_MenuMain","path":"rooms/Rm_MenuMain/Rm_MenuMain.yy",},},
     {"id":{"name":"Rm_MenuOptions","path":"rooms/Rm_MenuOptions/Rm_MenuOptions.yy",},},
@@ -116,6 +117,7 @@
     {"roomId":{"name":"Rm_Concept_2","path":"rooms/Rm_Concept_2/Rm_Concept_2.yy",},},
     {"roomId":{"name":"Rm_Test","path":"rooms/Rm_Test/Rm_Test.yy",},},
     {"roomId":{"name":"Rm_Concept_3","path":"rooms/Rm_Concept_3/Rm_Concept_3.yy",},},
+    {"roomId":{"name":"Rm_Empty","path":"rooms/Rm_Empty/Rm_Empty.yy",},},
   ],
   "templateType":"game",
   "TextureGroups":[
