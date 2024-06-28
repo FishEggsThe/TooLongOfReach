@@ -22,15 +22,15 @@
         {"$GMRInstance":"","%Name":"inst_1668EC5","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_1668EC5","objectId":{"name":"Obj_Camera","path":"objects/Obj_Camera/Obj_Camera.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":32.0,"y":-32.0,},
       ],"layers":[],"name":"Instances","properties":[],"resourceType":"GMRInstanceLayer","resourceVersion":"2.0","userdefinedDepth":false,"visible":true,},
     {"$GMRTileLayer":"","%Name":"Tiles","depth":100,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"name":"Tiles","properties":[],"resourceType":"GMRTileLayer","resourceVersion":"2.0","tiles":{"SerialiseHeight":10,"SerialiseWidth":10,"TileCompressedData":[
-          -7,0,-3,-2147483648,-2,0,1,9,-3,0,4,10,0,0,-2147483648,-9,0,1,-2147483648,-6,0,-2,1,2,0,-2147483648,
+          -7,0,-3,-2147483648,-2,0,8,9,0,0,11,10,0,0,-2147483648,-9,0,1,-2147483648,-6,0,-2,1,2,0,-2147483648,
           -17,0,1,-2147483648,-25,0,2,9,2,-5,0,1,-2147483648,-5,0,1,-2147483648,-3,0,
         ],"TileDataFormat":1,},"tilesetId":{"name":"Ts_Main","path":"tilesets/Ts_Main/Ts_Main.yy",},"userdefinedDepth":false,"visible":true,"x":0,"y":0,},
     {"$GMRTileLayer":"","%Name":"Tiles_Grass","depth":200,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"name":"Tiles_Grass","properties":[],"resourceType":"GMRTileLayer","resourceVersion":"2.0","tiles":{"SerialiseHeight":10,"SerialiseWidth":10,"TileCompressedData":[
-          -11,0,-8,4,-2,0,1,4,-4,0,-3,4,-2,0,1,4,-4,0,-3,4,-2,0,1,4,-4,0,-3,4,-2,0,1,4,-4,0,-3,4,-2,0,1,4,-6,0,
-          4,4,0,0,4,-6,0,3,4,0,0,-8,4,-11,0,
+          -11,0,-8,4,-2,0,5,4,0,0,4,0,-3,4,-2,0,1,4,-4,0,-3,4,-2,0,1,4,-4,0,-3,4,-2,0,1,4,-4,0,-3,4,-2,0,1,4,-6,
+          0,4,4,0,0,4,-6,0,3,4,0,0,-8,4,-11,0,
         ],"TileDataFormat":1,},"tilesetId":{"name":"Ts_Grass","path":"tilesets/Ts_Grass/Ts_Grass.yy",},"userdefinedDepth":false,"visible":true,"x":0,"y":0,},
     {"$GMRTileLayer":"","%Name":"Tiles_Cliffs","depth":300,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"name":"Tiles_Cliffs","properties":[],"resourceType":"GMRTileLayer","resourceVersion":"2.0","tiles":{"SerialiseHeight":10,"SerialiseWidth":10,"TileCompressedData":[
-          1,4,-8,28,4,8,24,0,0,-6,-2147483648,7,16,24,0,34,20,20,36,-3,-2147483648,7,16,24,0,16,48,48,24,-3,-2147483648,
+          1,4,-8,28,4,8,24,0,0,-6,-2147483648,7,16,24,0,34,36,0,42,-3,-2147483648,7,16,24,0,16,2,20,26,-3,-2147483648,
           7,16,24,0,16,48,48,24,-3,-2147483648,7,16,24,0,16,48,48,24,-3,-2147483648,14,16,24,0,16,48,48,2,20,36,
           -2147483648,16,24,0,40,-4,28,6,38,-2147483648,16,24,0,0,-6,-2147483648,2,16,2,-8,20,1,1,
         ],"TileDataFormat":1,},"tilesetId":{"name":"Ts_Cliffs","path":"tilesets/Ts_Cliffs/Ts_Cliffs.yy",},"userdefinedDepth":false,"visible":true,"x":0,"y":0,},
