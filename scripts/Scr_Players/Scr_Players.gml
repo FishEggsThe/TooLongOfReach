@@ -16,7 +16,7 @@ function TileCollision(xDir, yDir){
 	var newX = x+addX
 	var newY = y+addY
 	var tileInWay = GetTileIndex("Tiles", newX, newY)
-	if (tileInWay != 9 && tileInWay != 13 && tileInWay != (11-playerIndex)) { // waterInWay == 0 && 
+	if (tileInWay != 9 && tileInWay != 13 && tileInWay != 20 && tileInWay != (11-playerIndex)) { // waterInWay == 0 && 
 		if tileInWay == 1 {
 			PushOrPullBlock("Tiles", x+32*xDir, y+32*yDir, 
 							32*xDir, 32*yDir, 0, 1)

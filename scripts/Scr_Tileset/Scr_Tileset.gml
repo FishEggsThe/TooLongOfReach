@@ -90,14 +90,13 @@ function ToggleDummyPillars(isBlue){
 			//show_debug_message("Old Pos XY: " + string(dummyPillars[i][1]) + ", " + string(dummyPillars[i][2]))
 			//show_debug_message(string(checkPlayer0) + ", " + string(checkPlayer1))
 			
-			if !checkPlayerPositions
-				return
-			//var mx = tilemap_get_cell_x_at_pixel(map_id, dummyPillars[i][1], dummyPillars[i][2]);
-			//var my = tilemap_get_cell_y_at_pixel(map_id, dummyPillars[i][1], dummyPillars[i][2]);
-			var data = GetTileIndex("Tiles", dummyPillars[i][1], dummyPillars[i][2]);
-			show_debug_message("data = " + string(data))
-			
 			if dummyPillars[i][3] == isBlue {
+				if !checkPlayerPositions
+					return
+				//var mx = tilemap_get_cell_x_at_pixel(map_id, dummyPillars[i][1], dummyPillars[i][2]);
+				//var my = tilemap_get_cell_y_at_pixel(map_id, dummyPillars[i][1], dummyPillars[i][2]);
+				var data = GetTileIndex("Tiles", dummyPillars[i][1], dummyPillars[i][2]);
+				show_debug_message("data = " + string(data))
 				if data == down {
 					temp[i] = up
 					show_debug_message(up)
