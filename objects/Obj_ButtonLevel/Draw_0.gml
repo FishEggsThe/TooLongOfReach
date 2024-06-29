@@ -1,10 +1,13 @@
 event_inherited()
 var levelNum = string(roomID-2)
-var length = string_length(levelNum)
+var length = string_length(levelNum)+1
 var spacing = 11
-for(var i = 0; i < length; i++) {
+for(var i = 1; i < length; i++) {
 	var num = string_copy(levelNum, i, 1)
-	var finalNum = ord(num)-48 //48-57
-	var numPos = spacing*(i-(length-1)/2)
+	var finalNum = real(num) //48-57
+	var numPos = spacing*(i-(length)/2)
 	draw_sprite(textSprite, finalNum, x+numPos, y)
+	show_debug_message(finalNum)
 }
+
+show_debug_message(string(roomID-2) + " -> " + levelNum + " -> " + string_copy(levelNum, 1, 1) + string_copy(levelNum, 2, 1))
