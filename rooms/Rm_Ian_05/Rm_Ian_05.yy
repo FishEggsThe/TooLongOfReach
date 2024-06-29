@@ -27,13 +27,13 @@
           0,
         ],"TileDataFormat":1,},"tilesetId":{"name":"Ts_Main","path":"tilesets/Ts_Main/Ts_Main.yy",},"userdefinedDepth":false,"visible":true,"x":0,"y":0,},
     {"$GMRTileLayer":"","%Name":"Tiles_Grass","depth":200,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"name":"Tiles_Grass","properties":[],"resourceType":"GMRTileLayer","resourceVersion":"2.0","tiles":{"SerialiseHeight":10,"SerialiseWidth":10,"TileCompressedData":[
-          -12,0,1,4,-3,0,-2,4,-4,0,1,4,-4,0,1,4,-14,0,-5,4,-9,0,1,4,-4,0,-2,4,-3,0,-3,4,-3,0,1,4,-3,0,-3,4,-21,
+          -12,0,1,4,-3,0,-2,4,-4,0,1,4,-3,0,-2,4,-14,0,-5,4,-9,0,1,4,-4,0,-2,4,-3,0,-3,4,-3,0,1,4,-3,0,-3,4,-21,
           0,
         ],"TileDataFormat":1,},"tilesetId":{"name":"Ts_Grass","path":"tilesets/Ts_Grass/Ts_Grass.yy",},"userdefinedDepth":false,"visible":true,"x":0,"y":0,},
     {"$GMRTileLayer":"","%Name":"Tiles_BoxInWater","depth":300,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"name":"Tiles_BoxInWater","properties":[],"resourceType":"GMRTileLayer","resourceVersion":"2.0","tiles":{"SerialiseHeight":10,"SerialiseWidth":10,"TileCompressedData":[-100,0,],"TileDataFormat":1,},"tilesetId":{"name":"Ts_Cliffs","path":"tilesets/Ts_Cliffs/Ts_Cliffs.yy",},"userdefinedDepth":false,"visible":true,"x":0,"y":0,},
     {"$GMRTileLayer":"","%Name":"Tiles_Cliffs","depth":400,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"name":"Tiles_Cliffs","properties":[],"resourceType":"GMRTileLayer","resourceVersion":"2.0","tiles":{"SerialiseHeight":10,"SerialiseWidth":10,"TileCompressedData":[
           42,47,4,28,8,47,4,28,28,8,47,47,24,-2147483648,16,47,24,-2147483648,-2147483648,16,47,47,24,-2147483648,
-          16,47,2,36,-2147483648,16,47,47,6,33,29,28,28,30,22,1,47,47,24,-5,-2147483648,39,16,47,47,4,30,33,22,
+          16,47,24,0,-2147483648,16,47,47,6,33,29,28,30,33,22,1,47,47,24,-5,-2147483648,39,16,47,47,4,30,33,22,
           20,36,-2147483648,40,28,8,24,-2147483648,-2147483648,16,47,24,0,-2147483648,-2147483648,16,2,36,-2147483648,
           16,47,24,0,-2147483648,-2147483648,16,47,2,20,1,47,2,-3,20,1,1,-10,47,
         ],"TileDataFormat":1,},"tilesetId":{"name":"Ts_Cliffs","path":"tilesets/Ts_Cliffs/Ts_Cliffs.yy",},"userdefinedDepth":false,"visible":true,"x":0,"y":0,},

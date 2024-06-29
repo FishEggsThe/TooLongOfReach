@@ -35,8 +35,8 @@ function TileCollision(xDir, yDir){
 			}
 		}
 	}
-	x = clamp(x, 0, room_width-1)
-	y = clamp(y, 0, room_height-1)
+	x = clamp(x, 0, room_width-32)
+	y = clamp(y, 0, room_height-32)
 }
 
 function SetLastDirection(xDir, yDir){
@@ -52,7 +52,7 @@ function SetLastDirection(xDir, yDir){
 function UseAbility(input, player) {
 	var ability = (playerIndex == 0 ? Obj_GrappleHook : Obj_BoxingGlove)
 	
-	if !instance_exists(ability)
+	if (!instance_exists(ability) && alive)
 		with instance_create_layer(x, y, "Instances", ability) {
 			creator = player
 			x = creator.x+16;
