@@ -1,16 +1,16 @@
 {
   "$GMRoom":"",
-  "%Name":"Rm_Fish_1",
+  "%Name":"Rm_Fish_01",
   "creationCodeFile":"",
   "inheritCode":false,
   "inheritCreationOrder":false,
   "inheritLayers":false,
   "instanceCreationOrder":[
-    {"name":"inst_59C6DD81","path":"rooms/Rm_Fish_1/Rm_Fish_1.yy",},
-    {"name":"inst_350FC540","path":"rooms/Rm_Fish_1/Rm_Fish_1.yy",},
-    {"name":"inst_33EE28B7","path":"rooms/Rm_Fish_1/Rm_Fish_1.yy",},
-    {"name":"inst_1668EC5","path":"rooms/Rm_Fish_1/Rm_Fish_1.yy",},
-    {"name":"inst_5DBAC07B","path":"rooms/Rm_Fish_1/Rm_Fish_1.yy",},
+    {"name":"inst_59C6DD81","path":"rooms/Rm_Fish_01/Rm_Fish_01.yy",},
+    {"name":"inst_350FC540","path":"rooms/Rm_Fish_01/Rm_Fish_01.yy",},
+    {"name":"inst_33EE28B7","path":"rooms/Rm_Fish_01/Rm_Fish_01.yy",},
+    {"name":"inst_1668EC5","path":"rooms/Rm_Fish_01/Rm_Fish_01.yy",},
+    {"name":"inst_5DBAC07B","path":"rooms/Rm_Fish_01/Rm_Fish_01.yy",},
   ],
   "isDnd":false,
   "layers":[
@@ -38,7 +38,7 @@
     {"$GMRTileLayer":"","%Name":"Tiles_Water","depth":500,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"name":"Tiles_Water","properties":[],"resourceType":"GMRTileLayer","resourceVersion":"2.0","tiles":{"SerialiseHeight":10,"SerialiseWidth":10,"TileCompressedData":[-100,0,],"TileDataFormat":1,},"tilesetId":{"name":"Ts_Water","path":"tilesets/Ts_Water/Ts_Water.yy",},"userdefinedDepth":false,"visible":true,"x":0,"y":0,},
     {"$GMRBackgroundLayer":"","%Name":"Background","animationFPS":15.0,"animationSpeedType":0,"colour":4291585034,"depth":600,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"hspeed":0.0,"htiled":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"name":"Background","properties":[],"resourceType":"GMRBackgroundLayer","resourceVersion":"2.0","spriteId":null,"stretch":false,"userdefinedAnimFPS":false,"userdefinedDepth":false,"visible":true,"vspeed":0.0,"vtiled":false,"x":0,"y":0,},
   ],
-  "name":"Rm_Fish_1",
+  "name":"Rm_Fish_01",
   "parent":{
     "name":"Rooms",
     "path":"folders/Rooms.yy",
