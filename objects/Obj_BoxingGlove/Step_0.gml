@@ -7,6 +7,8 @@ if extend {
 			x = oX+i*directions[0]
 			y = oY+i*directions[1]
 			var pos = GetTileIndex("Tiles", x, y)
+			var posColumn = GetTileIndex("Tiles_BoxInWater", x, y)
+			show_debug_message(string(pos != 0) + string(posColumn != 1) + string(posColumn != 3) + string(pos != (10+creator.playerIndex)))
 			if pos == 1 {
 				var dist = 0
 				var distDirX = 0
@@ -40,11 +42,15 @@ if extend {
 				CheckIfSubmerge((x-16)+directions[0]*32, (y-16)+directions[1]*32)
 				punched = true
 				break;
-			} else if (pos != 0 && pos != 12 && pos != 19 && pos != (10+creator.playerIndex)) {
+			} else if ((posColumn == 2 || posColumn == 4)) {
+				punched = true
+				break;
+			} else if (pos != 0 && pos != (10+creator.playerIndex)) {
 				punched = true
 				break;
 			}
 		}
+		show_debug_message("")
 	}
 } else {
 	x = oX + directions[0]*maxDistance/8
