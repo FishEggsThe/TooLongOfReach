@@ -8,6 +8,8 @@ while(room_exists(i) && i != room_last) {
 	yPos = 48 + spacingY*floor(newI/4)
 	with instance_create_layer(xPos, yPos, "Instances", Obj_ButtonLevel) {
 		roomID = Obj_LevelSelect.i
+		if roomID > global.levelCompleted
+			buttonSprite = Spr_ButtonLocked
 	}
 	i++
 }

@@ -80,6 +80,8 @@ function CheckIfTogether() {
 		if (alive && Obj_Player2.alive && distanceBetween < 33) {
 			global.together = true;
 			audio_play_sound(Snd_Victory, 8, false)
+			if room >= global.levelCompleted
+				global.levelCompleted++
 		}
 	}
 }

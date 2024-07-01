@@ -1,4 +1,4 @@
-event_inherited()
+if buttonSprite != Spr_ButtonLocked {event_inherited()}
 if global.debug {
 	var h = (keyboard_check_pressed(vk_right) - keyboard_check_pressed(vk_left))/2
 	x+=h

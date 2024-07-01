@@ -101,6 +101,7 @@
     {"id":{"name":"Spr_BoxingSpring","path":"sprites/Spr_BoxingSpring/Spr_BoxingSpring.yy",},},
     {"id":{"name":"Spr_Button","path":"sprites/Spr_Button/Spr_Button.yy",},},
     {"id":{"name":"Spr_ButtonBack","path":"sprites/Spr_ButtonBack/Spr_ButtonBack.yy",},},
+    {"id":{"name":"Spr_ButtonLocked","path":"sprites/Spr_ButtonLocked/Spr_ButtonLocked.yy",},},
     {"id":{"name":"Spr_ButtonNotPlay","path":"sprites/Spr_ButtonNotPlay/Spr_ButtonNotPlay.yy",},},
     {"id":{"name":"Spr_ButtonPlay","path":"sprites/Spr_ButtonPlay/Spr_ButtonPlay.yy",},},
     {"id":{"name":"Spr_Cheeseburger","path":"sprites/Spr_Cheeseburger/Spr_Cheeseburger.yy",},},
