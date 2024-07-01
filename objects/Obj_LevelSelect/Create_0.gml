@@ -1,5 +1,5 @@
 i = 4
-while(room_exists(i)) {
+while(room_exists(i) && i != room_last) {
 	var spacingX = 64
 	var spacingY = 48
 
