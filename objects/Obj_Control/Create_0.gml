@@ -4,6 +4,7 @@ if instance_number(Obj_Control) > 1 {
 	global.debug = false
 	global.together = false
 	global.cheeseburger = false
+	global.levelCompleted = 1
 	
 	spin = 0
 	spinMax = 120

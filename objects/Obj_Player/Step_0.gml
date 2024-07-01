@@ -6,5 +6,5 @@ if keyboard_check_pressed(inputKey)
 else
 	MovePlayer(moveKeys[0], moveKeys[1], moveKeys[2], moveKeys[3])
 
-
-CheckIfTogether()
+if !global.together
+	CheckIfTogether()

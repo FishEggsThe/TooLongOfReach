@@ -55,6 +55,11 @@ function UseAbility(input, player) {
 		return
 	var ability = (playerIndex == 0 ? Obj_GrappleHook : Obj_BoxingGlove)
 	
+	if ability == Obj_GrappleHook
+		audio_play_sound(Snd_Rope, 8, false)
+	else if ability == Obj_BoxingGlove
+		audio_play_sound(Snd_Punch, 8, false)
+	
 	if (!instance_exists(ability) && alive)
 		with instance_create_layer(x, y, "Instances", ability) {
 			creator = player
@@ -72,7 +77,9 @@ function CheckIfTogether() {
 	with instance_find(Obj_Player, 0) {
 		var distanceBetween = point_distance(x, y, Obj_Player2.x, Obj_Player2.y)
 		//show_debug_message(distanceBetween)
-		if (alive && Obj_Player2.alive && distanceBetween < 33)
+		if (alive && Obj_Player2.alive && distanceBetween < 33) {
 			global.together = true;
+			audio_play_sound(Snd_Victory, 8, false)
+		}
 	}
 }
