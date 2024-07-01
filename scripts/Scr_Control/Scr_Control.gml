@@ -28,9 +28,10 @@ function ShowLoseText(){
 }
 
 function GameChangeRoomCheck() {
-	if (keyboard_check_pressed(vk_space) && global.together)
-		room_goto_next()
-	if keyboard_check_pressed(ord("R"))
+	if (keyboard_check_pressed(vk_space) && global.together) {
+		if room_next(room) != -1
+			room_goto_next()
+	} if keyboard_check_pressed(ord("R"))
 		room_goto(room)
 	if keyboard_check_pressed(ord("T"))
 		room_goto(1)

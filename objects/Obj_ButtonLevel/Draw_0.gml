@@ -1,5 +1,5 @@
 event_inherited()
-var levelNum = string(roomID-2)
+var levelNum = string(roomID-3)
 var length = string_length(levelNum)+1
 var spacing = 11
 for(var i = 1; i < length; i++) {
@@ -10,4 +10,4 @@ for(var i = 1; i < length; i++) {
 	show_debug_message(finalNum)
 }
 
-show_debug_message(string(roomID-2) + " -> " + levelNum + " -> " + string_copy(levelNum, 1, 1) + string_copy(levelNum, 2, 1))
+show_debug_message(string(roomID-3) + " -> " + levelNum + " -> " + string_copy(levelNum, 1, 1) + string_copy(levelNum, 2, 1))

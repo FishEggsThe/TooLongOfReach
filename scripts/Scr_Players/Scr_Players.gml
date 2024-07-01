@@ -51,6 +51,8 @@ function SetLastDirection(xDir, yDir){
 }
 
 function UseAbility(input, player) {
+	if room == Rm_MenuMain
+		return
 	var ability = (playerIndex == 0 ? Obj_GrappleHook : Obj_BoxingGlove)
 	
 	if (!instance_exists(ability) && alive)
