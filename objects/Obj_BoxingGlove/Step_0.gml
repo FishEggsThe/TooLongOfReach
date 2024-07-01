@@ -40,8 +40,8 @@ if extend {
 				break;
 			} else if pos == 9 {
 				PushOrPullBlock("Tiles", x-16, y-16, directions[0]*32, directions[1]*32, 0, 9)
-				SpawnParticle(pos[0]+16, pos[1]+16, Ps_Smoke, 1)
-				audio_play_sound(sfx_BlockPush, 8, false)
+				SpawnParticle(x, y, Ps_Smoke, 1)
+				audio_play_sound(Snd_BlockPush, 8, false)
 				CheckIfSubmerge((x-16)+directions[0]*32, (y-16)+directions[1]*32)
 				punched = true
 				break;

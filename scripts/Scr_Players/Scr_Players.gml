@@ -20,14 +20,16 @@ function TileCollision(xDir, yDir){
 			PushOrPullBlock("Tiles", x+32*xDir, y+32*yDir, 
 							32*xDir, 32*yDir, 0, 1)
 			SpawnParticle(x+32*xDir+16,  y+32*yDir+16, Ps_Smoke, 1)
-			audio_play_sound(sfx_BlockPush, 8, false)
+			audio_play_sound(Snd_BlockPush, 8, false)
 			CheckIfSubmerge( x+64*xDir,  y+64*yDir)
 								
 		} else {
 			if xDir != 0 {
 				x = newX
+				audio_play_sound(Snd_Step, 8, false)
 			} else if yDir != 0 {
 				y = newY
+				audio_play_sound(Snd_Step, 8, false)
 			}
 			var waterInWay = GetTileIndex("Tiles_Water", x, y)
 			var checkForBox = GetTileIndex("Tiles_Cliffs", x, y)
@@ -56,13 +58,10 @@ function UseAbility(input, player) {
 	if room == Rm_MenuMain
 		return
 	var ability = (playerIndex == 0 ? Obj_GrappleHook : Obj_BoxingGlove)
+	var sound = (playerIndex == 0 ? Snd_Rope : Snd_Punch)
 	
-	if ability == Obj_GrappleHook
-		audio_play_sound(Snd_Rope, 8, false)
-	else if ability == Obj_BoxingGlove
-		audio_play_sound(Snd_Punch, 8, false)
-	
-	if (!instance_exists(ability) && alive)
+	if (!instance_exists(ability) && alive) {
+		audio_play_sound(sound, 8, false)
 		with instance_create_layer(x, y, "Instances", ability) {
 			creator = player
 			x = creator.x+16;
@@ -72,6 +71,7 @@ function UseAbility(input, player) {
 			direction = point_direction(0, 0, directions[0], directions[1])
 			//show_debug_message(string(directions) + " " + string(direction))
 		}
+	}
 	canMove = false
 }
 

@@ -1,6 +1,6 @@
 {
   "$GMSound":"",
-  "%Name":"radicalfishing",
+  "%Name":"Snd_BlockPush",
   "audioGroupId":{
     "name":"audiogroup_default",
     "path":"audiogroups/audiogroup_default",
@@ -9,8 +9,8 @@
   "bitRate":128,
   "compression":0,
   "conversionMode":0,
-  "duration":48.229366,
-  "name":"radicalfishing",
+  "duration":0.696,
+  "name":"Snd_BlockPush",
   "parent":{
     "name":"Sounds",
     "path":"folders/Sounds.yy",
@@ -19,7 +19,7 @@
   "resourceType":"GMSound",
   "resourceVersion":"2.0",
   "sampleRate":44100,
-  "soundFile":"radicalfishing.ogg",
+  "soundFile":"Snd_BlockPush.mp3",
   "type":0,
-  "volume":0.3,
+  "volume":1.0,
 }
