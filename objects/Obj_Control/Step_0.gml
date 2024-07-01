@@ -7,18 +7,14 @@ if global.together {
 if room >= 3
 	GameChangeRoomCheck()
 
-if keyboard_check_pressed(ord("I")) {
-	global.debug = !global.debug
-	if global.debug {show_debug_message(string(global.debug) + " It's debug time")}
-}
+//if keyboard_check_pressed(ord("I")) {
+//	global.debug = !global.debug
+//	if global.debug {show_debug_message(string(global.debug) + " It's debug time")}
+//}
 
 if global.debug {
-	var i = 0
-	while(room_exists(i)) {
-		if keyboard_check_pressed(ord(string(i)))
-			room_goto(i)
-		i++
-	}
+	if keyboard_check_pressed(vk_enter)
+		room_goto(room_last)
 	
 	if mouse_check_button_pressed(mb_left)
 		instance_create_layer(mouse_x, mouse_y, "Instances", Ps_Smoke)
