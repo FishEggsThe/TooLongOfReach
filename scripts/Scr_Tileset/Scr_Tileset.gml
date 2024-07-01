@@ -2,6 +2,7 @@
 function PushOrPullBlock(tileset, xPos, yPos, xAdd, yAdd, blockA, blockB){
 	var pos = GetTileIndex(tileset, xPos+xAdd, yPos+yAdd)
 	var posWater = GetTileIndex("Tiles_Water", xPos+xAdd, yPos+yAdd)
+	var posColumn = GetTileIndex("Tiles_BoxInWater", xPos+xAdd, yPos+yAdd)
 	var p0x = instance_find(Obj_Player, 0).x
 	var p0y = instance_find(Obj_Player, 0).y
 	var p1x = instance_find(Obj_Player, 1).x
@@ -9,7 +10,7 @@ function PushOrPullBlock(tileset, xPos, yPos, xAdd, yAdd, blockA, blockB){
 	var checkPlayer0 = !(p0x == xPos+xAdd && p0y == yPos+yAdd)
 	var checkPlayer1 = !(p1x == xPos+xAdd && p1y == yPos+yAdd)
 	var checkPlayerPositions = (checkPlayer0 && checkPlayer1)
-	var finalBool = (pos == 0 && checkPlayerPositions)//((pos == 0 || pos == 12) && checkPlayerPositions)
+	var finalBool = ((pos == 0 && (posColumn != 2 && posColumn != 4)) && checkPlayerPositions)//((pos == 0 || pos == 12) && checkPlayerPositions)
 	
 	show_debug_message("Player0 XY: " + string(p0x) + ", " + string(p0y))
 	show_debug_message("Player1 XY: " + string(p1x) + ", " + string(p1y))
@@ -33,7 +34,7 @@ function CheckIfSubmerge(xPos, yPos){
 		SetTileIndex("Tiles",  xPos,  yPos, 0)
 		if boxType == 1 {
 			SetTileIndex("Tiles_Water", xPos, yPos, 0)
-			SetTileIndex("Tiles_BoxInWater", xPos, yPos, 48)
+			SetTileIndex("Tiles_BoxInWater", xPos, yPos, 5)
 		}
 		instance_create_layer(xPos, yPos, "Instances", Obj_Splash)
 	}
@@ -60,7 +61,7 @@ function SetTileIndex(tileset, xPos, yPos, tileI){
 }
 
 function GetTilePosition(tileset, xPos, yPos){
-	var lay_id = layer_get_id("Tiles");
+	var lay_id = layer_get_id(tileset);
 	var map_id = layer_tilemap_get_id(lay_id);
 	var tx = tilemap_get_x(map_id), ty = tilemap_get_y(map_id), tw = tilemap_get_tile_width(map_id), th = tilemap_get_tile_height(map_id);
 	var xx = (x - tx) div tw * tw + tx;
@@ -72,7 +73,7 @@ function GetTilePosition(tileset, xPos, yPos){
 function ToggleDummyPillars(isBlue){
 	with Obj_TileStuff {
 		dummyColor = isBlue
-		var down = 12+(7*isBlue)
+		var down = 1+(2*isBlue)
 		var up = down+1
 		show_debug_message(down)
 		show_debug_message(up)
@@ -85,9 +86,11 @@ function ToggleDummyPillars(isBlue){
 		
 		for(var i = 0; i < array_length(dummyPillars); i++) {
 			
+			var posBlock = GetTileIndex("Tiles", dummyPillars[i][1], dummyPillars[i][2])
 			var checkPlayer0 = !(p0x == dummyPillars[i][1] && p0y == dummyPillars[i][2])
 			var checkPlayer1 = !(p1x == dummyPillars[i][1] && p1y == dummyPillars[i][2])
 			var checkPlayerPositions = (checkPlayer0 && checkPlayer1)
+			var finalCheck = (posBlock != 1 && checkPlayerPositions)
 			
 			//show_debug_message("Player0 XY: " + string(p0x) + ", " + string(p0y))
 			//show_debug_message("Player1 XY: " + string(p1x) + ", " + string(p1y))
@@ -95,11 +98,11 @@ function ToggleDummyPillars(isBlue){
 			//show_debug_message(string(checkPlayer0) + ", " + string(checkPlayer1))
 			
 			if dummyPillars[i][3] == isBlue {
-				if !checkPlayerPositions
+				if !finalCheck
 					return
 				//var mx = tilemap_get_cell_x_at_pixel(map_id, dummyPillars[i][1], dummyPillars[i][2]);
 				//var my = tilemap_get_cell_y_at_pixel(map_id, dummyPillars[i][1], dummyPillars[i][2]);
-				var data = GetTileIndex("Tiles", dummyPillars[i][1], dummyPillars[i][2]);
+				var data = GetTileIndex("Tiles_BoxInWater", dummyPillars[i][1], dummyPillars[i][2]);
 				show_debug_message("data = " + string(data))
 				if data == down {
 					temp[i] = up
@@ -117,7 +120,7 @@ function ToggleDummyPillars(isBlue){
 		show_debug_message(temp)
 		for(var i = 0; i < array_length(dummyPillars); i++) {
 			dummyPillars[i][0] = temp[i]
-			SetTileIndex("Tiles", dummyPillars[i][1], dummyPillars[i][2], dummyPillars[i][0])
+			SetTileIndex("Tiles_BoxInWater", dummyPillars[i][1], dummyPillars[i][2], dummyPillars[i][0])
 		}
 	}
 }
