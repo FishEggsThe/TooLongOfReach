@@ -20,6 +20,7 @@ function TileCollision(xDir, yDir){
 			PushOrPullBlock("Tiles", x+32*xDir, y+32*yDir, 
 							32*xDir, 32*yDir, 0, 1)
 			SpawnParticle(x+32*xDir+16,  y+32*yDir+16, Ps_Smoke, 1)
+			audio_play_sound(sfx_BlockPush, 8, false)
 			CheckIfSubmerge( x+64*xDir,  y+64*yDir)
 								
 		} else {

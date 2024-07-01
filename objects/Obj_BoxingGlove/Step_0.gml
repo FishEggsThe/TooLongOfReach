@@ -23,6 +23,7 @@ if extend {
 					dist += 32
 					if going {SpawnParticle(x+distDirX,  y+distDirY, Ps_Fire, 30*(dist/32))}
 				}
+				if (distDirX != 0 || distDirY != 0) {audio_play_sound(Snd_Flame, 8, false)}
 				CheckIfSubmerge(x+distDirX-16, y+distDirY-16)
 				punched = true
 				break;
@@ -39,6 +40,8 @@ if extend {
 				break;
 			} else if pos == 9 {
 				PushOrPullBlock("Tiles", x-16, y-16, directions[0]*32, directions[1]*32, 0, 9)
+				SpawnParticle(pos[0]+16, pos[1]+16, Ps_Smoke, 1)
+				audio_play_sound(sfx_BlockPush, 8, false)
 				CheckIfSubmerge((x-16)+directions[0]*32, (y-16)+directions[1]*32)
 				punched = true
 				break;

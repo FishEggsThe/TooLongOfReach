@@ -90,6 +90,8 @@
     {"id":{"name":"Scr_Players","path":"scripts/Scr_Players/Scr_Players.yy",},},
     {"id":{"name":"Scr_Tileset","path":"scripts/Scr_Tileset/Scr_Tileset.yy",},},
     {"id":{"name":"radicalfishing","path":"sounds/radicalfishing/radicalfishing.yy",},},
+    {"id":{"name":"sfx_BlockPush","path":"sounds/sfx_BlockPush/sfx_BlockPush.yy",},},
+    {"id":{"name":"Snd_Flame","path":"sounds/Snd_Flame/Snd_Flame.yy",},},
     {"id":{"name":"Snd_Punch","path":"sounds/Snd_Punch/Snd_Punch.yy",},},
     {"id":{"name":"Snd_Rope","path":"sounds/Snd_Rope/Snd_Rope.yy",},},
     {"id":{"name":"Snd_Splash","path":"sounds/Snd_Splash/Snd_Splash.yy",},},

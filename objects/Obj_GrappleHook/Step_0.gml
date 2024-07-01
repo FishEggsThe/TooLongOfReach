@@ -15,6 +15,7 @@ if maxDistance >= 0 {
 		var pos = GetTilePosition("Tiles", x, y)
 		PushOrPullBlock("Tiles", pos[0], pos[1], 32*(-directions[0]), 32*(-directions[1]), 0, 1)
 		SpawnParticle(pos[0]+16, pos[1]+16, Ps_Smoke, 1)
+		audio_play_sound(sfx_BlockPush, 8, false)
 		CheckIfSubmerge(pos[0]+32*(-directions[0]), pos[1]+32*(-directions[1]))
 		//SetTileIndex("Tiles", x, y, 0)
 		//SetTileIndex("Tiles", x+32*(-directions[0]), y+32*(-directions[1]), 1)
